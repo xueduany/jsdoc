@@ -240,7 +240,7 @@
         if (moduleNames.length) {
             nav += '<h3>Modules</h3><ul>';
             moduleNames.forEach(function(m) {
-                if ( !seen.hasOwnProperty(m.longname) ) nav += '<li>'+linkto(m.longname, m.name)+'</li>';
+                if ( !seen.hasOwnProperty(m.longname) ) nav += '<li>'+linkto(m.longname, m.longname)+'</li>';
                 seen[m.longname] = true;
             });
             
@@ -268,7 +268,7 @@
                     moduleSameName[0].module = c;
                 }
                 
-                if (!seen.hasOwnProperty(c.longname) ) nav += '<li>'+linkto(c.longname, c.name)+'</li>';
+                if (!seen.hasOwnProperty(c.longname) ) nav += '<li>'+linkto(c.longname, c.longname)+'</li>';
                 seen[c.longname] = true;
             });
             
@@ -279,7 +279,7 @@
         if (namespaceNames.length) {
             nav += '<h3>Namespaces</h3><ul>';
             namespaceNames.forEach(function(n) {
-                if ( !seen.hasOwnProperty(n.longname) ) nav += '<li>'+linkto(n.longname, n.name)+'</li>';
+                if ( !seen.hasOwnProperty(n.longname) ) nav += '<li>'+linkto(n.longname, n.longname)+'</li>';
                 seen[n.longname] = true;
             });
             
@@ -301,7 +301,7 @@
         if (mixinNames.length) {
             nav += '<h3>Mixins</h3><ul>';
             mixinNames.forEach(function(m) {
-                if ( !seen.hasOwnProperty(m.longname) ) nav += '<li>'+linkto(m.longname, m.name)+'</li>';
+                if ( !seen.hasOwnProperty(m.longname) ) nav += '<li>'+linkto(m.longname, m.longname)+'</li>';
                 seen[m.longname] = true;
             });
             
@@ -322,7 +322,7 @@
         if (globalNames.length) {
             nav += '<h3>Global</h3><ul>';
             globalNames.forEach(function(g) {
-                if ( g.kind !== 'typedef' && !seen.hasOwnProperty(g.longname) ) nav += '<li>'+linkto(g.longname, g.name)+'</li>';
+                if ( g.kind !== 'typedef' && !seen.hasOwnProperty(g.longname) ) nav += '<li>'+linkto(g.longname, g.longname)+'</li>';
                 seen[g.longname] = true;
             });
             
