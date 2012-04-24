@@ -62,7 +62,8 @@ exports.resolve = function(doclet) {
     }
     
     if (doclet.scope === 'global') { // via @global tag?
-        doclet.setLongname(doclet.name);
+        //doclet.setLongname(doclet.name);
+        doclet.name = doclet.longname;
         delete doclet.memberof;
     }
     else if (about.scope) {
