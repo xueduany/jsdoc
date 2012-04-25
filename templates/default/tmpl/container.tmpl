@@ -72,8 +72,8 @@
         <h3 class="subsection-title">Classes</h3>
         
         <dl><?js classes.forEach(function(c) { ?>
-            <dt><?js= self.linkto(c.longname, c.name) ?></dt>
-            <dd><?js if (c.summary) { ?><?js= c.summary ?><?js } ?></dd>
+            <dt><?js= self.linkto(c.longname, c.longname) ?></dt>
+            <dd><?js if (c.description) { ?><?js= c.description ?><?js } ?></dd>
         <?js }); ?></dl>
     <?js } ?>
     

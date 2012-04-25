@@ -1,1 +1,10 @@
 java -cp lib/js.jar org.mozilla.javascript.tools.shell.Main -modules node_modules -modules rhino_modules -modules . jsdoc.js D:\workspace\KitJs\KitJs\src\js\kit.js
+
+java -cp lib/js.jar org.mozilla.javascript.tools.shell.Main -modules node_modules -modules rhino_modules -modules . jsdoc.js D:\workspace\KitJs\KitJs\src\js\ -r -p
+
+java -cp lib/js.jar org.mozilla.javascript.tools.shell.Main -modules node_modules -modules rhino_modules -modules . jsdoc.js D:\workspace\KitJs\KitJs\src\js\ -r
+
+
+<?js for(var p in meta){ ?>
+	<?js= p+ ' '+meta[p]+'<hr/>' ?>
+	<?js } ?>
