@@ -1,0 +1,1812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Class: Date</title>
+    
+    <script src="http://shjs.sourceforge.net/sh_main.min.js"> </script>
+    <script src="http://shjs.sourceforge.net/lang/sh_javascript.min.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/node-dark.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+    
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30210234-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+<div style="position:fixed;right:0;top:0;"><a href="http://xueduany.github.com/KitJs/KitJs/index.html" style="display:block;text-decoration:none;padding:0 10px;height:30px;line-height:30px;color:#fff;background-color:#53BDE8;">返回KitJs Demo</a></div>
+<div id="main">
+    
+    <h1 class="page-title">Class: Date</h1>
+    
+    
+
+<section>
+    
+<header>
+    <h2>
+        <span class="ancestors"><a href="$Kit.html">$Kit</a>.</span>
+    
+    Date
+    </h2>
+    
+</header>  
+
+<article>
+    <div class="container-overview">
+    
+    
+    
+    	
+        
+<dt>
+    <h4 class="name" id="Date"><span class="type-signature"></span>new $Kit.Date</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        日期时间扩展
+    </p>
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/date.js, line 1</li></ul></dd>
+	
+    
+    
+	
+	
+	<dt class="tag-see">See:</dt>
+	<dd class="tag-see">
+        <ul>
+            <li><a href="https://github.com/xueduany/KitJs/blob/master/KitJs/src/js/date.js">Source code</a></li>
+        </ul>
+	</dd>
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+    
+    </div>
+    
+    
+    
+    
+    
+    
+        <h3 class="subsection-title">Requires</h3>
+        
+        <ul>
+            <li>module:kit.js</li>
+        
+            <li>module:math.js</li>
+        
+            <li>module:array.js</li>
+        </ul>
+    
+    
+    
+    
+    
+    
+    
+        <h3 class="subsection-title">Members</h3>
+        
+        <dl>
+            
+<dt>
+    <h4 class="name" id="languagePack"><span class="type-signature"></span>languagePack<span class="type-signature"></span></h4>
+    
+    
+</dt>
+<dd>
+    
+    <p class="description">
+        日期语言包
+    </p>
+    
+    
+    
+<dl class="details">
+    
+        
+        <h5 class="subsection-title">Properties:</h5>
+        
+        <dl>
+
+<table class="props">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		<th>Default</th>
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>en</code></td>
+            
+            
+            <td class="type">
+            
+            </td>
+            
+            
+            
+            
+                <td class="default">
+                
+                    OBJECTLIT
+                
+                </td>
+            
+            
+            <td class="description last">英文月份语言包</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>cn</code></td>
+            
+            
+            <td class="type">
+            
+            </td>
+            
+            
+            
+            
+                <td class="default">
+                
+                    OBJECTLIT
+                
+                </td>
+            
+            
+            <td class="description last">中文月份语言包</td>
+        </tr>
+	
+	
+	</tbody>
+</table></dl>
+        
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/date.js, line 106</li></ul></dd>
+	
+    
+    
+	
+	
+	<dt class="tag-see">See:</dt>
+	<dd class="tag-see">
+        <ul>
+            <li><a href="https://github.com/xueduany/KitJs/blob/master/KitJs/src/js/date.js">查看代码</a></li>
+        </ul>
+	</dd>
+	
+	
+	
+</dl>
+
+    
+    
+</dd>
+
+        </dl>
+    
+    
+    
+        <h3 class="subsection-title">Methods</h3>
+        
+        <dl>
+            
+<dt>
+    <h4 class="name" id="addDays"><span class="type-signature"></span>addDays</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        增加天数
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>date</code></td>
+            
+            
+            <td class="type">
+            
+                        Date
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>days</code></td>
+            
+            
+            <td class="type">
+            
+                        Number
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/date.js, line 337</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Date</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="addMonths"><span class="type-signature"></span>addMonths</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        改变月份
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>date</code></td>
+            
+            
+            <td class="type">
+            
+                        Date
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>dir</code></td>
+            
+            
+            <td class="type">
+            
+                        Number
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last">月份增量</td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/date.js, line 219</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Date</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="addYears"><span class="type-signature"></span>addYears</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        改变年份
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>date</code></td>
+            
+            
+            <td class="type">
+            
+                        Date
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>dir</code></td>
+            
+            
+            <td class="type">
+            
+                        Number
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last">年份增量</td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/date.js, line 277</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Date</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="dateNow"><span class="type-signature"></span>dateNow</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        返回当前日期，时分秒为00
+    </p>
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/date.js, line 323</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Date</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="formatDate"><span class="type-signature"></span>formatDate</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        按照format格式（如yyyy年MM月dd日）格式化日期
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Argument</th>
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>date</code></td>
+            
+            
+            <td class="type">
+            
+                        Date
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>format</code></td>
+            
+            
+            <td class="type">
+            
+                        DateFormat
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last">需要$kit.date.parseFormat('yyyy年MM月dd日')</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>language</code></td>
+            
+            
+            <td class="type">
+            
+                        String
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last">语言</td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/date.js, line 297</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">String</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="formatTime"><span class="type-signature"></span>formatTime</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        返回时间字符串 dd:dd:dd，参数time，单位秒
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>time</code></td>
+            
+            
+            <td class="type">
+            
+                        String
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/date.js, line 51</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">String</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="getDaysInMonth"><span class="type-signature"></span>getDaysInMonth</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        一个月有多少天
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>year</code></td>
+            
+            
+            <td class="type">
+            
+                        Date
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>month</code></td>
+            
+            
+            <td class="type">
+            
+                        String
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/date.js, line 74</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Number</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="isLeapYear"><span class="type-signature"></span>isLeapYear</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        是否闰年
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>year</code></td>
+            
+            
+            <td class="type">
+            
+                        Date
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/date.js, line 65</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Boolean</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="parseDate"><span class="type-signature"></span>parseDate</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        解析日期
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Argument</th>
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>date</code></td>
+            
+            
+            <td class="type">
+            
+                        Date
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>format</code></td>
+            
+            
+            <td class="type">
+            
+                        DateFormat
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last">需要$kit.date.parseFormat('yyyy年MM月dd日')</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>language</code></td>
+            
+            
+            <td class="type">
+            
+                        String
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last">语言包，默认中文</td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/date.js, line 137</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Date</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="parseFormat"><span class="type-signature"></span>parseFormat</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        解析时间格式
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>format</code></td>
+            
+            
+            <td class="type">
+            
+                        String
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last">如"yyyy年MM月dd日"</td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/date.js, line 85</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="parseTime"><span class="type-signature"></span>parseTime</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        返回时间，单位秒 dd:dd:dd 时:分:秒
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>timeStr</code></td>
+            
+            
+            <td class="type">
+            
+                        String
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/date.js, line 22</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Date</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        </dl>
+    
+    
+    
+    
+    
+</article>
+
+</section>  
+
+
+</div>
+
+<nav>
+    <h3>Classes</h3><ul><li><a href="$Kit.html">$Kit</a></li><li><a href="$Kit.Animation.html">$Kit.Animation</a></li><li><a href="$Kit.Array.html">$Kit.Array</a></li><li><a href="$Kit.Cookie.html">$Kit.Cookie</a></li><li><a href="$Kit.Date.html">$Kit.Date</a></li><li><a href="$Kit.Dom.html">$Kit.Dom</a></li><li><a href="$Kit.Event.html">$Kit.Event</a></li><li><a href="$Kit.IO.html">$Kit.IO</a></li><li><a href="$Kit.JSON.html">$Kit.JSON</a></li><li><a href="$Kit.LocalStorage.html">$Kit.LocalStorage</a></li><li><a href="$Kit.Math.html">$Kit.Math</a></li><li><a href="$Kit.Selection.html">$Kit.Selection</a></li><li><a href="$kit.selector.html">$kit.selector</a></li><li><a href="$kit.SortMap.html">$kit.SortMap</a></li><li><a href="$Kit.String.html">$Kit.String</a></li><li><a href="$Kit.Suger.html">$Kit.Suger</a></li><li><a href="$kit.TreeDict.html">$kit.TreeDict</a></li><li><a href="$kit.ui.Audio.html">$kit.ui.Audio</a></li><li><a href="$kit.ui.CodeExample.html">$kit.ui.CodeExample</a></li><li><a href="$kit.ui.DatePicker.html">$kit.ui.DatePicker</a></li><li><a href="$kit.ui.DatePicker.NMonths.html">$kit.ui.DatePicker.NMonths</a></li><li><a href="$kit.ui.Editor.html">$kit.ui.Editor</a></li><li><a href="$kit.ui.Editor.SimpleEditor.html">$kit.ui.Editor.SimpleEditor</a></li><li><a href="$kit.ui.Form.html">$kit.ui.Form</a></li><li><a href="$kit.ui.Form.ComboBox.html">$kit.ui.Form.ComboBox</a></li><li><a href="$kit.ui.Form.ComboBox.Select.html">$kit.ui.Form.ComboBox.Select</a></li><li><a href="$kit.ui.Form.List.html">$kit.ui.Form.List</a></li><li><a href="$kit.ui.Form.TextArea.html">$kit.ui.Form.TextArea</a></li><li><a href="$kit.ui.Form.TimeInput.html">$kit.ui.Form.TimeInput</a></li><li><a href="$kit.ui.Gallery.html">$kit.ui.Gallery</a></li><li><a href="$kit.ui.LightBox.html">$kit.ui.LightBox</a></li><li><a href="$kit.ui.Mask.html">$kit.ui.Mask</a></li><li><a href="$kit.ui.SemitransparentLoading.html">$kit.ui.SemitransparentLoading</a></li><li><a href="$kit.ui.SlideBar.html">$kit.ui.SlideBar</a></li><li><a href="$kit.ui.StarLevel.html">$kit.ui.StarLevel</a></li><li><a href="$kit.ui.TagInput.html">$kit.ui.TagInput</a></li><li><a href="$kit.ui.Validator.html">$kit.ui.Validator</a></li><li><a href="LinkedHashMap.html">LinkedHashMap</a></li><li><a href="TreeDict.html">TreeDict</a></li></ul><h3>Namespaces</h3><ul><li><a href="$kit.ui.html">$kit.ui</a></li></ul><h3>Global</h3><ul><li><a href="global.html#$kit">$kit</a></li><li><a href="global.html#$kit.$el">$kit.$el</a></li><li><a href="global.html#$kit.anim">$kit.anim</a></li><li><a href="global.html#$kit.array">$kit.array</a></li><li><a href="global.html#$kit.cookie">$kit.cookie</a></li><li><a href="global.html#$kit.date">$kit.date</a></li><li><a href="global.html#$kit.dom">$kit.dom</a></li><li><a href="global.html#$kit.event">$kit.event</a></li><li><a href="global.html#$kit.io">$kit.io</a></li><li><a href="global.html#$kit.json">$kit.json</a></li><li><a href="global.html#$kit.localStorage">$kit.localStorage</a></li><li><a href="global.html#$kit.math">$kit.math</a></li><li><a href="global.html#$kit.selection">$kit.selection</a></li><li><a href="global.html#$kit.str">$kit.str</a></li></ul>
+</nav>
+
+<br clear="both">
+
+<footer>
+    Documentation generated by <a href="https://github.com/micmath/jsdoc">JSDoc 3</a> on Wed Apr 25 2012 18:45:21 GMT+0800 (CST)<br/>
+    Copyright 2012 <a href="http://xueduany.github.com/Ciku/aboutme/index.html">xueduanyang</a> all right reserved, <a href="http://xueduany.github.com/KitJs">Back to KitJs Demo Project</a>.
+</footer>
+
+<script> sh_highlightDocument(); </script>
+</body>
+</html>

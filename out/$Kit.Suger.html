@@ -1,0 +1,10530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Class: Suger</title>
+    
+    <script src="http://shjs.sourceforge.net/sh_main.min.js"> </script>
+    <script src="http://shjs.sourceforge.net/lang/sh_javascript.min.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/node-dark.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+    
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30210234-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+<div style="position:fixed;right:0;top:0;"><a href="http://xueduany.github.com/KitJs/KitJs/index.html" style="display:block;text-decoration:none;padding:0 10px;height:30px;line-height:30px;color:#fff;background-color:#53BDE8;">返回KitJs Demo</a></div>
+<div id="main">
+    
+    <h1 class="page-title">Class: Suger</h1>
+    
+    
+
+<section>
+    
+<header>
+    <h2>
+        <span class="ancestors"><a href="$Kit.html">$Kit</a>.</span>
+    
+    Suger
+    </h2>
+    
+</header>  
+
+<article>
+    <div class="container-overview">
+    
+    
+    
+    	
+        
+<dt>
+    <h4 class="name" id="Suger"><span class="type-signature"></span>new $Kit.Suger</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        kitjs语法糖纯链式结构，jQuery API 100%实现
+    </p>
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+        <h5 class="subsection-title">Properties:</h5>
+        
+        <dl>
+
+<table class="props">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>nodes</code></td>
+            
+            
+            <td class="type">
+            
+                        [Element]
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last">Element Array List</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>length</code></td>
+            
+            
+            <td class="type">
+            
+                        Number
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last">Element Array List Length</td>
+        </tr>
+	
+	
+	</tbody>
+</table></dl>
+        
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 1</li></ul></dd>
+	
+    
+    
+	
+	
+	<dt class="tag-see">See:</dt>
+	<dd class="tag-see">
+        <ul>
+            <li><a href="https://github.com/xueduany/KitJs/blob/master/KitJs/src/js/suger.js">Source code</a></li>
+        </ul>
+	</dd>
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+    
+    </div>
+    
+    
+    
+    
+    
+    
+        <h3 class="subsection-title">Requires</h3>
+        
+        <ul>
+            <li>module:kit.js</li>
+        
+            <li>module:array.js</li>
+        
+            <li>module:anim.js</li>
+        
+            <li>module:dom.js</li>
+        
+            <li>module:event.js</li>
+        
+            <li>module:json.js</li>
+        </ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        <h3 class="subsection-title">Methods</h3>
+        
+        <dl>
+            
+<dt>
+    <h4 class="name" id="add"><span class="type-signature"></span>add</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        给已匹配的nodelist加点料Add elements to the set of matched elements.
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Argument</th>
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>selector</code></td>
+            
+            
+            <td class="type">
+            
+                        Selector
+                         | 
+                    
+                        Element
+                         | 
+                    
+                        [Element,Element,Element ...]
+                         | 
+                    
+                        HTML
+                         | 
+                    
+                        $Kit.Suger Instance Object
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>context</code></td>
+            
+            
+            <td class="type">
+            
+                        Context
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 66</li></ul></dd>
+	
+    
+    
+	
+	
+	<dt class="tag-see">See:</dt>
+	<dd class="tag-see">
+        <ul>
+            <li><a href="http://api.jquery.com/add/">详细看jQuery的解释，和他一样</a></li>
+        </ul>
+	</dd>
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    current $Kit.Suger Instance
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="addClass"><span class="type-signature"></span>addClass</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        你懂得，添加样式Adds the specified class(es) to each of the set of matched elements.
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>className</code></td>
+            
+            
+            <td class="type">
+            
+                        String
+                         | 
+                    
+                        Function
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 101</li></ul></dd>
+	
+    
+    
+	
+	
+	<dt class="tag-see">See:</dt>
+	<dd class="tag-see">
+        <ul>
+            <li><a href="http://api.jquery.com/addClass/">详细看jQuery的解释，和他一样</a></li>
+        </ul>
+	</dd>
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    current $Kit.Suger Instance
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="after"><span class="type-signature"></span>after</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        当前对象的nextSibling插入一个神马东东Insert content, specified by the parameter, after each element in the set of matched elements.
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>content</code></td>
+            
+            
+            <td class="type">
+            
+                        HTML
+                         | 
+                    
+                        Element
+                         | 
+                    
+                        [Element]
+                         | 
+                    
+                        $Kit.Suger Instance Object
+                         | 
+                    
+                        Function
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 235</li></ul></dd>
+	
+    
+    
+	
+	
+	<dt class="tag-see">See:</dt>
+	<dd class="tag-see">
+        <ul>
+            <li><a href="http://api.jquery.com/after/">详细看jQuery的解释，和他一样</a></li>
+        </ul>
+	</dd>
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    current $Kit.Suger Instance
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="andSelf"><span class="type-signature"></span>andSelf</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        将上一次调用的nodelist加到当前的nodelist里面Add the previous set of elements on the stack to the current set.
+    </p>
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 168</li></ul></dd>
+	
+    
+    
+	
+	
+	<dt class="tag-see">See:</dt>
+	<dd class="tag-see">
+        <ul>
+            <li><a href="http://api.jquery.com/andSelf/">详细看jQuery的解释，和他一样</a></li>
+        </ul>
+	</dd>
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    new $Kit.Suger Instance
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="append"><span class="type-signature"></span>append</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        在屁股插入htmlInsert content, specified by the parameter, to the end of each element in the set of matched elements.
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>content</code></td>
+            
+            
+            <td class="type">
+            
+                        HTML
+                         | 
+                    
+                        Element
+                         | 
+                    
+                        [Element]
+                         | 
+                    
+                        $Kit.Suger Instance Object
+                         | 
+                    
+                        Function
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 286</li></ul></dd>
+	
+    
+    
+	
+	
+	<dt class="tag-see">See:</dt>
+	<dd class="tag-see">
+        <ul>
+            <li><a href="http://api.jquery.com/append/">详细看jQuery的解释，和他一样</a></li>
+        </ul>
+	</dd>
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    current $Kit.Suger Instance
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="appendTo"><span class="type-signature"></span>appendTo</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        添加到谁的屁股Insert every element in the set of matched elements to the end of the target.
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>target</code></td>
+            
+            
+            <td class="type">
+            
+                        Element
+                         | 
+                    
+                        $Kit.Suger Instance Object
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 337</li></ul></dd>
+	
+    
+    
+	
+	
+	<dt class="tag-see">See:</dt>
+	<dd class="tag-see">
+        <ul>
+            <li><a href="http://api.jquery.com/appendTo/">详细看jQuery的解释，和他一样</a></li>
+        </ul>
+	</dd>
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    current $Kit.Suger Instance
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="attr"><span class="type-signature"></span>attr</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        属性设置Get the value of an attribute for the first element in the set of matched elements.
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>attrName</code></td>
+            
+            
+            <td class="type">
+            
+                        String
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>attrValue</code></td>
+            
+            
+            <td class="type">
+            
+                        String
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 489</li></ul></dd>
+	
+    
+    
+	
+	
+	<dt class="tag-see">See:</dt>
+	<dd class="tag-see">
+        <ul>
+            <li><a href="http://api.jquery.com/attr/">详细看jQuery的解释，和他一样</a></li>
+        </ul>
+	</dd>
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    current $Kit.Suger Instance or string value
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> |
+		
+		<span class="param-type">String</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="before"><span class="type-signature"></span>before</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        在previousSibling插入元素Insert content, specified by the parameter, before each element in the set of matched elements.
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>content</code></td>
+            
+            
+            <td class="type">
+            
+                        HTML
+                         | 
+                    
+                        Element
+                         | 
+                    
+                        [Element]
+                         | 
+                    
+                        $Kit.Suger Instance Object
+                         | 
+                    
+                        Function
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 184</li></ul></dd>
+	
+    
+    
+	
+	
+	<dt class="tag-see">See:</dt>
+	<dd class="tag-see">
+        <ul>
+            <li><a href="http://api.jquery.com/before/">详细看jQuery的解释，和他一样</a></li>
+        </ul>
+	</dd>
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    current $Kit.Suger Instance
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="bind"><span class="type-signature"></span>bind</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        绑定事件，同on
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>event</code></td>
+            
+            
+            <td class="type">
+            
+                        String
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>eventFunction</code></td>
+            
+            
+            <td class="type">
+            
+                        Function
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 1024</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    current $Kit.Suger Instance
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="children"><span class="type-signature"></span>children</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        Get the children of each element in the set of matched elements, optionally filtered by a selector.
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Argument</th>
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>selector</code></td>
+            
+            
+            <td class="type">
+            
+                        Selector
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 1581</li></ul></dd>
+	
+    
+    
+	
+	
+	<dt class="tag-see">See:</dt>
+	<dd class="tag-see">
+        <ul>
+            <li><a href="http://api.jquery.com/children/">详细看jQuery的解释，和他一样</a></li>
+        </ul>
+	</dd>
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    new $Kit.Suger Instance
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="clone"><span class="type-signature"></span>clone</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        clone node
+    </p>
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 530</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    new $Kit.Suger Instance
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="closest"><span class="type-signature"></span>closest</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        从自身开始查找，返回符合条件的元素Get the first element that matches the selector, beginning at the current element and progressing up through the DOM tree.
+    </p>
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 542</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    new $Kit.Suger Instance
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="contains"><span class="type-signature"></span>contains</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        判断dom位置是否包含
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Argument</th>
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>selector</code></td>
+            
+            
+            <td class="type">
+            
+                        Element
+                         | 
+                    
+                        Selector
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>contenxt</code></td>
+            
+            
+            <td class="type">
+            
+                        Element
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 567</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Boolean</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="css"><span class="type-signature"></span>css</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        样式Get the value of a style property for the first element in the set of matched elements.
+    </p>
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 556</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    current $Kit.Suger Instance or string value
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> |
+		
+		<span class="param-type">String</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="data"><span class="type-signature"></span>data</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        建立dom与js对象的关系Store arbitrary data associated with the matched elements.
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>key</code></td>
+            
+            
+            <td class="type">
+            
+                        String
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>value</code></td>
+            
+            
+            <td class="type">
+            
+                        String
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 583</li></ul></dd>
+	
+    
+    
+	
+	
+	<dt class="tag-see">See:</dt>
+	<dd class="tag-see">
+        <ul>
+            <li><a href="http://api.jquery.com/data/">详细看jQuery的解释，和他一样</a></li>
+        </ul>
+	</dd>
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    current $Kit.Suger Instance
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="delegate"><span class="type-signature"></span>delegate</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        绑定事件，同on
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>event</code></td>
+            
+            
+            <td class="type">
+            
+                        String
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>eventFunction</code></td>
+            
+            
+            <td class="type">
+            
+                        Function
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 1033</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    current $Kit.Suger Instance
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="detach"><span class="type-signature"></span>detach</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        从this.nodes里面删除匹配的元素Remove the set of matched elements from the DOM.
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>selector</code></td>
+            
+            
+            <td class="type">
+            
+                        Selector
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 613</li></ul></dd>
+	
+    
+    
+	
+	
+	<dt class="tag-see">See:</dt>
+	<dd class="tag-see">
+        <ul>
+            <li><a href="http://api.jquery.com/detach/">详细看jQuery的解释，和他一样</a></li>
+        </ul>
+	</dd>
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    new $Kit.Suger Instance
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="each"><span class="type-signature"></span>each</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        遍历Iterate over a jQuery object, executing a function for each matched element.
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>fn</code></td>
+            
+            
+            <td class="type">
+            
+                        Function
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last">function(index, Element)A function to execute for each matched element.</td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 631</li></ul></dd>
+	
+    
+    
+	
+	
+	<dt class="tag-see">See:</dt>
+	<dd class="tag-see">
+        <ul>
+            <li><a href="http://api.jquery.com/each/">详细看jQuery的解释，和他一样</a></li>
+        </ul>
+	</dd>
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    current $Kit.Suger Instance
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="empty"><span class="type-signature"></span>empty</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        删除childNodesRemove all child nodes of the set of matched elements from the DOM.
+    </p>
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 644</li></ul></dd>
+	
+    
+    
+	
+	
+	<dt class="tag-see">See:</dt>
+	<dd class="tag-see">
+        <ul>
+            <li><a href="http://api.jquery.com/empty/">详细看jQuery的解释，和他一样</a></li>
+        </ul>
+	</dd>
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    current $Kit.Suger Instance
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="end"><span class="type-signature"></span>end</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        返回前一个End the most recent filtering operation in the current chain and return the set of matched elements to its previous state.
+    </p>
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 656</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    previous $Kit.Suger Instance
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="eq"><span class="type-signature"></span>eq</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        返回数组中第几个元素Reduce the set of matched elements to the one at the specified index.
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>index</code></td>
+            
+            
+            <td class="type">
+            
+                        Number
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 670</li></ul></dd>
+	
+    
+    
+	
+	
+	<dt class="tag-see">See:</dt>
+	<dd class="tag-see">
+        <ul>
+            <li><a href="http://api.jquery.com/eq/">详细看jQuery的解释，和他一样</a></li>
+        </ul>
+	</dd>
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    new $Kit.Suger Instance
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="filter"><span class="type-signature"></span>filter</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        过滤，生成新的Reduce the set of matched elements to those that match the selector or pass the function's test.
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>selector</code></td>
+            
+            
+            <td class="type">
+            
+                        Selector
+                         | 
+                    
+                        Element
+                         | 
+                    
+                        [Element]
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 684</li></ul></dd>
+	
+    
+    
+	
+	
+	<dt class="tag-see">See:</dt>
+	<dd class="tag-see">
+        <ul>
+            <li><a href="http://api.jquery.com/filter/">详细看jQuery的解释，和他一样</a></li>
+        </ul>
+	</dd>
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    new $Kit.Suger Instance
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="find"><span class="type-signature"></span>find</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        找到，生成新的Get the descendants of each element in the current set of matched elements, filtered by a selector, jQuery object, or element.
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>selector</code></td>
+            
+            
+            <td class="type">
+            
+                        Selector
+                         | 
+                    
+                        Element
+                         | 
+                    
+                        [Element]
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 714</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    new $Kit.Suger Instance
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="first"><span class="type-signature"></span>first</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        返回第一个Reduce the set of matched elements to the first in the set.
+    </p>
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 749</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    new $Kit.Suger Instance
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="get"><span class="type-signature"></span>get</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        返回DOM element
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>index</code></td>
+            
+            
+            <td class="type">
+            
+                        Number
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 1604</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">[Element]</span> |
+		
+		<span class="param-type">Element</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="has"><span class="type-signature"></span>has</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        返回包含某种node的Reduce the set of matched elements to those that have a descendant that matches the selector or DOM element.
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>selector</code></td>
+            
+            
+            <td class="type">
+            
+                        Selector
+                         | 
+                    
+                        Element
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 759</li></ul></dd>
+	
+    
+    
+	
+	
+	<dt class="tag-see">See:</dt>
+	<dd class="tag-see">
+        <ul>
+            <li><a href="http://api.jquery.com/has/">详细看jQuery的解释，和他一样</a></li>
+        </ul>
+	</dd>
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="hasClass"><span class="type-signature"></span>hasClass</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        是否有某个样式Determine whether any of the matched elements are assigned the given class.
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>className</code></td>
+            
+            
+            <td class="type">
+            
+                        String
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 158</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Boolean</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="height"><span class="type-signature"></span>height</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        高度
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Argument</th>
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>value</code></td>
+            
+            
+            <td class="type">
+            
+                        Number
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 832</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Number</span> |
+		
+		<span class="param-type">$Kit.Suger Instance</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="hide"><span class="type-signature"></span>hide</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        隐藏Hide the matched elements.
+    </p>
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 779</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="html"><span class="type-signature"></span>html</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        返回htmlGet the HTML contents of the first element in the set of matched elements.
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Argument</th>
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>html</code></td>
+            
+            
+            <td class="type">
+            
+                        String
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 800</li></ul></dd>
+	
+    
+    
+	
+	
+	<dt class="tag-see">See:</dt>
+	<dd class="tag-see">
+        <ul>
+            <li><a href="http://api.jquery.com/html/">详细看jQuery的解释，和他一样</a></li>
+        </ul>
+	</dd>
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="index"><span class="type-signature"></span>index</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        返回索引Search for a given element from among the matched elements.
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Argument</th>
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>selector</code></td>
+            
+            
+            <td class="type">
+            
+                        Element
+                         | 
+                    
+                        Selector
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>context</code></td>
+            
+            
+            <td class="type">
+            
+                        Element
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 820</li></ul></dd>
+	
+    
+    
+	
+	
+	<dt class="tag-see">See:</dt>
+	<dd class="tag-see">
+        <ul>
+            <li><a href="http://api.jquery.com/index/">详细看jQuery的解释，和他一样</a></li>
+        </ul>
+	</dd>
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Number</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="innerHeight"><span class="type-signature"></span>innerHeight</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        内高度包括padding，不包括borderGet the current computed height for the first element in the set of matched elements, including padding but not border.
+    </p>
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 858</li></ul></dd>
+	
+    
+    
+	
+	
+	<dt class="tag-see">See:</dt>
+	<dd class="tag-see">
+        <ul>
+            <li><a href="http://api.jquery.com/innerHeight/">详细看jQuery的解释，和他一样</a></li>
+        </ul>
+	</dd>
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="innerWidth"><span class="type-signature"></span>innerWidth</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        Get the current computed width for the first element in the set of matched elements, including padding but not border.
+    </p>
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 865</li></ul></dd>
+	
+    
+    
+	
+	
+	<dt class="tag-see">See:</dt>
+	<dd class="tag-see">
+        <ul>
+            <li><a href="http://api.jquery.com/innerWidth/">详细看jQuery的解释，和他一样</a></li>
+        </ul>
+	</dd>
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="insertAfter"><span class="type-signature"></span>insertAfter</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        在屁股插入Insert every element in the set of matched elements after the target.
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Argument</th>
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>selector</code></td>
+            
+            
+            <td class="type">
+            
+                        Selector
+                         | 
+                    
+                        Element
+                         | 
+                    
+                        
+                         | 
+                    
+                        $Kit.Suger Instance Object
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>context</code></td>
+            
+            
+            <td class="type">
+            
+                        Element
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 384</li></ul></dd>
+	
+    
+    
+	
+	
+	<dt class="tag-see">See:</dt>
+	<dd class="tag-see">
+        <ul>
+            <li><a href="http://api.jquery.com/insertAfter/">详细看jQuery的解释，和他一样</a></li>
+        </ul>
+	</dd>
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    current $Kit.Suger Instance
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="insertBefore"><span class="type-signature"></span>insertBefore</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        在头部插入Insert every element in the set of matched elements before the target.
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Argument</th>
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>selector</code></td>
+            
+            
+            <td class="type">
+            
+                        Selector
+                         | 
+                    
+                        Element
+                         | 
+                    
+                        
+                         | 
+                    
+                        $Kit.Suger Instance Object
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>context</code></td>
+            
+            
+            <td class="type">
+            
+                        Element
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 358</li></ul></dd>
+	
+    
+    
+	
+	
+	<dt class="tag-see">See:</dt>
+	<dd class="tag-see">
+        <ul>
+            <li><a href="http://api.jquery.com/insertBefore/">详细看jQuery的解释，和他一样</a></li>
+        </ul>
+	</dd>
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    current $Kit.Suger Instance
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="is"><span class="type-signature"></span>is</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        判断是否满足选择器Check the current matched set of elements against a selector, element, or jQuery object and return true if at least one of these elements matches the given arguments.
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>selector</code></td>
+            
+            
+            <td class="type">
+            
+                        Selector
+                         | 
+                    
+                        $Kit.Suger Instance Object
+                         | 
+                    
+                        Element
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 892</li></ul></dd>
+	
+    
+    
+	
+	
+	<dt class="tag-see">See:</dt>
+	<dd class="tag-see">
+        <ul>
+            <li><a href="http://api.jquery.com/is/">详细看jQuery的解释，和他一样</a></li>
+        </ul>
+	</dd>
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="last"><span class="type-signature"></span>last</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        最后一个Reduce the set of matched elements to the final one in the set.
+    </p>
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 908</li></ul></dd>
+	
+    
+    
+	
+	
+	<dt class="tag-see">See:</dt>
+	<dd class="tag-see">
+        <ul>
+            <li><a href="http://api.jquery.com/last/">详细看jQuery的解释，和他一样</a></li>
+        </ul>
+	</dd>
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    new $Kit.Suger Instance
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="map"><span class="type-signature"></span>map</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        遍历，返回值加入到一个数组Pass each element in the current matched set through a function, producing a new jQuery object containing the return values.
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>fn</code></td>
+            
+            
+            <td class="type">
+            
+                        Function
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 919</li></ul></dd>
+	
+    
+    
+	
+	
+	<dt class="tag-see">See:</dt>
+	<dd class="tag-see">
+        <ul>
+            <li><a href="http://api.jquery.com/map/">详细看jQuery的解释，和他一样</a></li>
+        </ul>
+	</dd>
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Array</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="next"><span class="type-signature"></span>next</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        下一个元素Get the immediately following sibling of each element in the set of matched elements. If a selector is provided, it retrieves the next sibling only if it matches that selector.
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Argument</th>
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>selector</code></td>
+            
+            
+            <td class="type">
+            
+                        Selector
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 1190</li></ul></dd>
+	
+    
+    
+	
+	
+	<dt class="tag-see">See:</dt>
+	<dd class="tag-see">
+        <ul>
+            <li><a href="http://api.jquery.com/next/">详细看jQuery的解释，和他一样</a></li>
+        </ul>
+	</dd>
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    new $Kit.Suger Instance
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="nextAll"><span class="type-signature"></span>nextAll</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        后面所有元素Get all following siblings of each element in the set of matched elements, optionally filtered by a selector.
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Argument</th>
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>selector</code></td>
+            
+            
+            <td class="type">
+            
+                        Selector
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 1216</li></ul></dd>
+	
+    
+    
+	
+	
+	<dt class="tag-see">See:</dt>
+	<dd class="tag-see">
+        <ul>
+            <li><a href="http://api.jquery.com/nextAll/">详细看jQuery的解释，和他一样</a></li>
+        </ul>
+	</dd>
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    new $Kit.Suger Instance
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="nextUntil"><span class="type-signature"></span>nextUntil</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        同级后面所有，不包含selectorGet all following siblings of each element up to but not including the element matched by the selector, DOM node, or jQuery object passed.
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+            
+            <td class="type">
+            
+                        Selector ...
+                         | 
+                    
+                        Element ...
+                         | 
+                    
+                        $Kit.Suger Instance Object ...
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 1240</li></ul></dd>
+	
+    
+    
+	
+	
+	<dt class="tag-see">See:</dt>
+	<dd class="tag-see">
+        <ul>
+            <li><a href="http://api.jquery.com/nextUntil/">详细看jQuery的解释，和他一样</a></li>
+        </ul>
+	</dd>
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    new $Kit.Suger Instance
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="not"><span class="type-signature"></span>not</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        去掉匹配的Remove elements from the set of matched elements.
+    </p>
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 932</li></ul></dd>
+	
+    
+    
+	
+	
+	<dt class="tag-see">See:</dt>
+	<dd class="tag-see">
+        <ul>
+            <li><a href="http://api.jquery.com/andSelf/">详细看jQuery的解释，和他一样</a></li>
+        </ul>
+	</dd>
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    new $Kit.Suger Instance
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="off"><span class="type-signature"></span>off</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        注销事件
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Argument</th>
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>event</code></td>
+            
+            
+            <td class="type">
+            
+                        String
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>eventFunction</code></td>
+            
+            
+            <td class="type">
+            
+                        Function
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 985</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    current $Kit.Suger Instance
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="offset"><span class="type-signature"></span>offset</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        offset，看$kit.offsetGet the current coordinates of the first element in the set of matched elements, relative to the document.
+    </p>
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 1077</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="offsetParent"><span class="type-signature"></span>offsetParent</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        Get the closest ancestor element that is positioned.
+    </p>
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 1092</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    new $Kit.Suger Instance
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="on"><span class="type-signature"></span>on</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        绑定事件
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>event</code></td>
+            
+            
+            <td class="type">
+            
+                        String
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>eventFunction</code></td>
+            
+            
+            <td class="type">
+            
+                        Function
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 1042</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    current $Kit.Suger Instance
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="one"><span class="type-signature"></span>one</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        只执行一次的事件
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>event</code></td>
+            
+            
+            <td class="type">
+            
+                        String
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>eventFunction</code></td>
+            
+            
+            <td class="type">
+            
+                        Function
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 1064</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    current $Kit.Suger Instance
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="outerHeight"><span class="type-signature"></span>outerHeight</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        包括padding和borderGet the current computed height for the first element in the set of matched elements, including padding, border, and optionally margin. Returns an integer (without "px") representation of the value or null if called on an empty set of elements.
+    </p>
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 874</li></ul></dd>
+	
+    
+    
+	
+	
+	<dt class="tag-see">See:</dt>
+	<dd class="tag-see">
+        <ul>
+            <li><a href="http://api.jquery.com/outerHeight/">详细看jQuery的解释，和他一样</a></li>
+        </ul>
+	</dd>
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Number</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="outerWidth"><span class="type-signature"></span>outerWidth</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        包括padding和borderGet the current computed width for the first element in the set of matched elements, including padding and border.
+    </p>
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 883</li></ul></dd>
+	
+    
+    
+	
+	
+	<dt class="tag-see">See:</dt>
+	<dd class="tag-see">
+        <ul>
+            <li><a href="http://api.jquery.com/outerWidth/">详细看jQuery的解释，和他一样</a></li>
+        </ul>
+	</dd>
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Number</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="parent"><span class="type-signature"></span>parent</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        查找父节点Get the parent of each element in the current set of matched elements, optionally filtered by a selector.
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Argument</th>
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>selector</code></td>
+            
+            
+            <td class="type">
+            
+                        Selector
+                         | 
+                    
+                        Element
+                         | 
+                    
+                        $Kit.Suger Instance Object
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>context</code></td>
+            
+            
+            <td class="type">
+            
+                        Element
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 1103</li></ul></dd>
+	
+    
+    
+	
+	
+	<dt class="tag-see">See:</dt>
+	<dd class="tag-see">
+        <ul>
+            <li><a href="http://api.jquery.com/parent/">详细看jQuery的解释，和他一样</a></li>
+        </ul>
+	</dd>
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    new $Kit.Suger Instance
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="parents"><span class="type-signature"></span>parents</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        返回所有父节点Get the ancestors of each element in the current set of matched elements, optionally filtered by a selector.
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Argument</th>
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>selector</code></td>
+            
+            
+            <td class="type">
+            
+                        Selector
+                         | 
+                    
+                        Element
+                         | 
+                    
+                        $Kit.Suger Instance Object
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>context</code></td>
+            
+            
+            <td class="type">
+            
+                        Element
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 1129</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    new $Kit.Suger Instance
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="parentsUntil"><span class="type-signature"></span>parentsUntil</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        返回所有父节点直到Get the ancestors of each element in the current set of matched elements, up to but not including the element matched by the selector, DOM node, or jQuery object.
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Argument</th>
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>selector</code></td>
+            
+            
+            <td class="type">
+            
+                        Selector
+                         | 
+                    
+                        Element
+                         | 
+                    
+                        $Kit.Suger Instance Object
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>context</code></td>
+            
+            
+            <td class="type">
+            
+                        Element
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 1159</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    new $Kit.Suger Instance
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="position"><span class="type-signature"></span>position</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        position，看$kit.positionGet the current coordinates of the first element in the set of matched elements, relative to the offset parent.
+    </p>
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 1085</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="prepend"><span class="type-signature"></span>prepend</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        在头部插入htmlInsert content, specified by the parameter, to the beginning of each element in the set of matched elements.
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>content</code></td>
+            
+            
+            <td class="type">
+            
+                        HTML
+                         | 
+                    
+                        Element
+                         | 
+                    
+                        [Element]
+                         | 
+                    
+                        $Kit.Suger Instance Object
+                         | 
+                    
+                        Function
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 409</li></ul></dd>
+	
+    
+    
+	
+	
+	<dt class="tag-see">See:</dt>
+	<dd class="tag-see">
+        <ul>
+            <li><a href="http://api.jquery.com/prepend/">详细看jQuery的解释，和他一样</a></li>
+        </ul>
+	</dd>
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    current $Kit.Suger Instance
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="prependTo"><span class="type-signature"></span>prependTo</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        添加到谁的头部Insert every element in the set of matched elements to the beginning of the target.
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>target</code></td>
+            
+            
+            <td class="type">
+            
+                        Element
+                         | 
+                    
+                        $Kit.Suger Instance Object
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 460</li></ul></dd>
+	
+    
+    
+	
+	
+	<dt class="tag-see">See:</dt>
+	<dd class="tag-see">
+        <ul>
+            <li><a href="http://api.jquery.com/prependTo/">详细看jQuery的解释，和他一样</a></li>
+        </ul>
+	</dd>
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    current $Kit.Suger Instance
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="prev"><span class="type-signature"></span>prev</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        前面Get the immediately preceding sibling of each element in the set of matched elements, optionally filtered by a selector.
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Argument</th>
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>selector</code></td>
+            
+            
+            <td class="type">
+            
+                        Selector
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 1271</li></ul></dd>
+	
+    
+    
+	
+	
+	<dt class="tag-see">See:</dt>
+	<dd class="tag-see">
+        <ul>
+            <li><a href="http://api.jquery.com/prev/">详细看jQuery的解释，和他一样</a></li>
+        </ul>
+	</dd>
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    new $Kit.Suger Instance
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="prevAll"><span class="type-signature"></span>prevAll</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        之前所有的Get all preceding siblings of each element in the set of matched elements, optionally filtered by a selector.
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Argument</th>
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>selector</code></td>
+            
+            
+            <td class="type">
+            
+                        Selector
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 1297</li></ul></dd>
+	
+    
+    
+	
+	
+	<dt class="tag-see">See:</dt>
+	<dd class="tag-see">
+        <ul>
+            <li><a href="http://api.jquery.com/prevAll/">详细看jQuery的解释，和他一样</a></li>
+        </ul>
+	</dd>
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    new $Kit.Suger Instance
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="prevUntil"><span class="type-signature"></span>prevUntil</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        之前所有的，直到Get all preceding siblings of each element up to but not including the element matched by the selector, DOM node, or jQuery object.
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>selector</code></td>
+            
+            
+            <td class="type">
+            
+                        Selector ...
+                         | 
+                    
+                        Element ...
+                         | 
+                    
+                        $Kit.Suger Instance Object ...
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 1321</li></ul></dd>
+	
+    
+    
+	
+	
+	<dt class="tag-see">See:</dt>
+	<dd class="tag-see">
+        <ul>
+            <li><a href="http://api.jquery.com/prevUntil/">详细看jQuery的解释，和他一样</a></li>
+        </ul>
+	</dd>
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    new $Kit.Suger Instance
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="prop"><span class="type-signature"></span>prop</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        属性，同attr
+    </p>
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 503</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="pushStack"><span class="type-signature"></span>pushStack</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        生成一个新的jquery队列
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>selector</code></td>
+            
+            
+            <td class="type">
+            
+                        Selector
+                         | 
+                    
+                        Element
+                         | 
+                    
+                        [Element]
+                         | 
+                    
+                        $Kit.Suger Instance
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 1571</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    new $Kit.Suger Instance
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="remove"><span class="type-signature"></span>remove</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        删除Remove the set of matched elements from the DOM.
+    </p>
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 1350</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    current $Kit.Suger Instance
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="removeAttr"><span class="type-signature"></span>removeAttr</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        Remove an attribute from each element in the set of matched elements.
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>attrName</code></td>
+            
+            
+            <td class="type">
+            
+                        String
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 511</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    current $Kit.Suger Instance
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="removeClass"><span class="type-signature"></span>removeClass</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        Remove a single class, multiple classes, or all classes from each element in the set of matched elements.
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>className</code></td>
+            
+            
+            <td class="type">
+            
+                        String
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 120</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    current $Kit.Suger Instance
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="removeData"><span class="type-signature"></span>removeData</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        Remove a previously-stored piece of data.
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>dataName</code></td>
+            
+            
+            <td class="type">
+            
+                        String
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 599</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    current $Kit.Suger Instance
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="removeProp"><span class="type-signature"></span>removeProp</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        Remove an attribute from each element in the set of matched elements.
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+            
+            <td class="type">
+            
+                        String
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 523</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    current $Kit.Suger Instance
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="replaceAll"><span class="type-signature"></span>replaceAll</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        替换Replace each target element with the set of matched elements.
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Argument</th>
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>selector</code></td>
+            
+            
+            <td class="type">
+            
+                        Selector
+                         | 
+                    
+                        Element
+                         | 
+                    
+                        $Kit.Suger Instance Object
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>context</code></td>
+            
+            
+            <td class="type">
+            
+                        Element
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 1365</li></ul></dd>
+	
+    
+    
+	
+	
+	<dt class="tag-see">See:</dt>
+	<dd class="tag-see">
+        <ul>
+            <li><a href="http://api.jquery.com/replaceAll/">详细看jQuery的解释，和他一样</a></li>
+        </ul>
+	</dd>
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    current $Kit.Suger Instance
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="replaceWith"><span class="type-signature"></span>replaceWith</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        Replace each element in the set of matched elements with the provided new content.\
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Argument</th>
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>selector</code></td>
+            
+            
+            <td class="type">
+            
+                        Selector
+                         | 
+                    
+                        Element
+                         | 
+                    
+                        $Kit.Suger Instance Object
+                         | 
+                    
+                        Function
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>context</code></td>
+            
+            
+            <td class="type">
+            
+                        Element
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 1389</li></ul></dd>
+	
+    
+    
+	
+	
+	<dt class="tag-see">See:</dt>
+	<dd class="tag-see">
+        <ul>
+            <li><a href="http://api.jquery.com/replaceWith/">详细看jQuery的解释，和他一样</a></li>
+        </ul>
+	</dd>
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    current $Kit.Suger Instance
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="serialize"><span class="type-signature"></span>serialize</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        form元素序列化
+    </p>
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 1409</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="show"><span class="type-signature"></span>show</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        显示
+    </p>
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 787</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="siblings"><span class="type-signature"></span>siblings</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        找到所有同级其他元素
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Argument</th>
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>selector</code></td>
+            
+            
+            <td class="type">
+            
+                        Selector
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 1422</li></ul></dd>
+	
+    
+    
+	
+	
+	<dt class="tag-see">See:</dt>
+	<dd class="tag-see">
+        <ul>
+            <li><a href="http://api.jquery.com/siblings/">详细看jQuery的解释，和他一样</a></li>
+        </ul>
+	</dd>
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">[Element]</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="size"><span class="type-signature"></span>size</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        返回nodes长度
+    </p>
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 1439</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Number</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="slice"><span class="type-signature"></span>slice</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        Reduce the set of matched elements to a subset specified by a range of indices.
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Argument</th>
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>begin</code></td>
+            
+            
+            <td class="type">
+            
+                        Number
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>end</code></td>
+            
+            
+            <td class="type">
+            
+                        Number
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 1448</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    new $Kit.Suger Instance
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="text"><span class="type-signature"></span>text</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        返回htmlGet the combined text contents of each element in the set of matched elements, including their descendants.
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Argument</th>
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>text</code></td>
+            
+            
+            <td class="type">
+            
+                        String
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 809</li></ul></dd>
+	
+    
+    
+	
+	
+	<dt class="tag-see">See:</dt>
+	<dd class="tag-see">
+        <ul>
+            <li><a href="http://api.jquery.com/text/">详细看jQuery的解释，和他一样</a></li>
+        </ul>
+	</dd>
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="toggleClass"><span class="type-signature"></span>toggleClass</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        切换classNameAdd or remove one or more classes from each element in the set of matched elements, depending on either the class's presence or the value of the switch argument.
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>className</code></td>
+            
+            
+            <td class="type">
+            
+                        String
+                         | 
+                    
+                        Function
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>switch</code></td>
+            
+            
+            <td class="type">
+            
+                        Boolean
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last">add or del?</td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 134</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    current $Kit.Suger Instance
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="unbind"><span class="type-signature"></span>unbind</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        注销事件，同off
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Argument</th>
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>event</code></td>
+            
+            
+            <td class="type">
+            
+                        String
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>eventFunction</code></td>
+            
+            
+            <td class="type">
+            
+                        Function
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 1006</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    current $Kit.Suger Instance
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="undelegate"><span class="type-signature"></span>undelegate</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        注销事件，同off
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Argument</th>
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>event</code></td>
+            
+            
+            <td class="type">
+            
+                        String
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>eventFunction</code></td>
+            
+            
+            <td class="type">
+            
+                        Function
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 1015</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    current $Kit.Suger Instance
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="unwrap"><span class="type-signature"></span>unwrap</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        Remove the parents of the set of matched elements from the DOM, leaving the matched elements in their place.
+    </p>
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 1550</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    new $Kit.Suger Instance
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="val"><span class="type-signature"></span>val</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        获得valueGet the current value of the first element in the set of matched elements.
+    </p>
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 1461</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">String</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="width"><span class="type-signature"></span>width</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        宽度
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Argument</th>
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>value</code></td>
+            
+            
+            <td class="type">
+            
+                        Number
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 845</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Number</span> |
+		
+		<span class="param-type">$Kit.Suger Instance</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="wrap"><span class="type-signature"></span>wrap</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        包围Wrap an HTML structure around each element in the set of matched elements.
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>node</code></td>
+            
+            
+            <td class="type">
+            
+                        HTML
+                         | 
+                    
+                        Element
+                         | 
+                    
+                        $Kit.Suger Instance
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 1470</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    new $Kit.Suger Instance
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="wrapAll"><span class="type-signature"></span>wrapAll</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        Wrap an HTML structure around all elements in the set of matched elements.
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>node</code></td>
+            
+            
+            <td class="type">
+            
+                        HTML
+                         | 
+                    
+                        Element
+                         | 
+                    
+                        $Kit.Suger Instance
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 1490</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    new $Kit.Suger Instance
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="wrapInner"><span class="type-signature"></span>wrapInner</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <p class="description">
+        Wrap an HTML structure around the content of each element in the set of matched elements.
+    </p>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>node</code></td>
+            
+            
+            <td class="type">
+            
+                        HTML
+                         | 
+                    
+                        Element
+                         | 
+                    
+                        $Kit.Suger Instance
+                         | 
+                    
+                        Function
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/suger.js, line 1519</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    new $Kit.Suger Instance
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Object</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        </dl>
+    
+    
+    
+    
+    
+</article>
+
+</section>  
+
+
+</div>
+
+<nav>
+    <h3>Classes</h3><ul><li><a href="$Kit.html">$Kit</a></li><li><a href="$Kit.Animation.html">$Kit.Animation</a></li><li><a href="$Kit.Array.html">$Kit.Array</a></li><li><a href="$Kit.Cookie.html">$Kit.Cookie</a></li><li><a href="$Kit.Date.html">$Kit.Date</a></li><li><a href="$Kit.Dom.html">$Kit.Dom</a></li><li><a href="$Kit.Event.html">$Kit.Event</a></li><li><a href="$Kit.IO.html">$Kit.IO</a></li><li><a href="$Kit.JSON.html">$Kit.JSON</a></li><li><a href="$Kit.LocalStorage.html">$Kit.LocalStorage</a></li><li><a href="$Kit.Math.html">$Kit.Math</a></li><li><a href="$Kit.Selection.html">$Kit.Selection</a></li><li><a href="$kit.selector.html">$kit.selector</a></li><li><a href="$kit.SortMap.html">$kit.SortMap</a></li><li><a href="$Kit.String.html">$Kit.String</a></li><li><a href="$Kit.Suger.html">$Kit.Suger</a></li><li><a href="$kit.TreeDict.html">$kit.TreeDict</a></li><li><a href="$kit.ui.Audio.html">$kit.ui.Audio</a></li><li><a href="$kit.ui.CodeExample.html">$kit.ui.CodeExample</a></li><li><a href="$kit.ui.DatePicker.html">$kit.ui.DatePicker</a></li><li><a href="$kit.ui.DatePicker.NMonths.html">$kit.ui.DatePicker.NMonths</a></li><li><a href="$kit.ui.Editor.html">$kit.ui.Editor</a></li><li><a href="$kit.ui.Editor.SimpleEditor.html">$kit.ui.Editor.SimpleEditor</a></li><li><a href="$kit.ui.Form.html">$kit.ui.Form</a></li><li><a href="$kit.ui.Form.ComboBox.html">$kit.ui.Form.ComboBox</a></li><li><a href="$kit.ui.Form.ComboBox.Select.html">$kit.ui.Form.ComboBox.Select</a></li><li><a href="$kit.ui.Form.List.html">$kit.ui.Form.List</a></li><li><a href="$kit.ui.Form.TextArea.html">$kit.ui.Form.TextArea</a></li><li><a href="$kit.ui.Form.TimeInput.html">$kit.ui.Form.TimeInput</a></li><li><a href="$kit.ui.Gallery.html">$kit.ui.Gallery</a></li><li><a href="$kit.ui.LightBox.html">$kit.ui.LightBox</a></li><li><a href="$kit.ui.Mask.html">$kit.ui.Mask</a></li><li><a href="$kit.ui.SemitransparentLoading.html">$kit.ui.SemitransparentLoading</a></li><li><a href="$kit.ui.SlideBar.html">$kit.ui.SlideBar</a></li><li><a href="$kit.ui.StarLevel.html">$kit.ui.StarLevel</a></li><li><a href="$kit.ui.TagInput.html">$kit.ui.TagInput</a></li><li><a href="$kit.ui.Validator.html">$kit.ui.Validator</a></li><li><a href="LinkedHashMap.html">LinkedHashMap</a></li><li><a href="TreeDict.html">TreeDict</a></li></ul><h3>Namespaces</h3><ul><li><a href="$kit.ui.html">$kit.ui</a></li></ul><h3>Global</h3><ul><li><a href="global.html#$kit">$kit</a></li><li><a href="global.html#$kit.$el">$kit.$el</a></li><li><a href="global.html#$kit.anim">$kit.anim</a></li><li><a href="global.html#$kit.array">$kit.array</a></li><li><a href="global.html#$kit.cookie">$kit.cookie</a></li><li><a href="global.html#$kit.date">$kit.date</a></li><li><a href="global.html#$kit.dom">$kit.dom</a></li><li><a href="global.html#$kit.event">$kit.event</a></li><li><a href="global.html#$kit.io">$kit.io</a></li><li><a href="global.html#$kit.json">$kit.json</a></li><li><a href="global.html#$kit.localStorage">$kit.localStorage</a></li><li><a href="global.html#$kit.math">$kit.math</a></li><li><a href="global.html#$kit.selection">$kit.selection</a></li><li><a href="global.html#$kit.str">$kit.str</a></li></ul>
+</nav>
+
+<br clear="both">
+
+<footer>
+    Documentation generated by <a href="https://github.com/micmath/jsdoc">JSDoc 3</a> on Wed Apr 25 2012 18:45:23 GMT+0800 (CST)<br/>
+    Copyright 2012 <a href="http://xueduany.github.com/Ciku/aboutme/index.html">xueduanyang</a> all right reserved, <a href="http://xueduany.github.com/KitJs">Back to KitJs Demo Project</a>.
+</footer>
+
+<script> sh_highlightDocument(); </script>
+</body>
+</html>
