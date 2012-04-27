@@ -20,8 +20,10 @@
 
 <article>
     <div class="container-overview">
-    <?js if (doc.kind === 'module' && doc.module) { ?>
-        <?js= self.partial('method.tmpl', doc.module) ?>
+    <?js if (doc.kind === 'module' && doc) { ?>
+		<?js if(doc.returns.length > 0 && doc.returns[0].description){ ?>
+			<h4 style="color:black">Exports : <a style="color:#A35A00" href="<?js=doc.returns[0].description+ (doc.returns[0].description.indexOf('#')>-1?'':'.html') ?>"><?js=doc.returns[0].description.indexOf('#')>-1?doc.returns[0].description.substring(doc.returns[0].description.indexOf('#')+1):doc.returns[0].description ?></a></h4>
+		<?js } ?>
     <?js } ?>
     
     <?js if (doc.kind === 'class') { ?>
