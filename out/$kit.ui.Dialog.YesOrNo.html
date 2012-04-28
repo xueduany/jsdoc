@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Class: TagInput</title>
+    <title>JSDoc: Class: YesOrNo</title>
     
     <script src="http://shjs.sourceforge.net/sh_main.min.js"> </script>
     <script src="http://shjs.sourceforge.net/lang/sh_javascript.min.js"> </script>
@@ -31,7 +31,7 @@
 <div style="position:fixed;right:0;top:0;"><a href="http://xueduany.github.com/KitJs/KitJs/index.html" style="display:block;text-decoration:none;padding:0 10px;height:30px;line-height:30px;color:#fff;background-color:#53BDE8;">返回KitJs Demo</a></div>
 <div id="main">
     
-    <h1 class="page-title">Class: TagInput</h1>
+    <h1 class="page-title">Class: YesOrNo</h1>
     
     
 
@@ -39,9 +39,9 @@
     
 <header>
     <h2>
-        <span class="ancestors"><a href="global.html#$kit">$kit</a><a href="$kit.ui.html">.ui</a>.</span>
+        <span class="ancestors"><a href="global.html#$kit">$kit</a><a href="$kit.ui.html">.ui</a><a href="$kit.ui.Dialog.html">.Dialog</a>.</span>
     
-    TagInput
+    YesOrNo
     </h2>
     
 </header>  
@@ -54,7 +54,7 @@
     	
         
 <dt>
-    <h4 class="name" id="TagInput"><span class="type-signature"></span>new $kit.ui.TagInput</h4>
+    <h4 class="name" id="YesOrNo"><span class="type-signature"></span>new $kit.ui.Dialog.YesOrNo</h4>
     
     
 </dt>
@@ -62,7 +62,7 @@
     
     
     <div class="description">
-        Tag系统模仿stackOverFlow的表单提交tag系统
+        对话框组件，yes Or no Or cancel
     </div>
     
     
@@ -90,7 +90,7 @@
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/TagInput/tagInput.js, line 1</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Dialog/yesOrNo.js, line 1</li></ul></dd>
 	
     
     
@@ -99,7 +99,7 @@
 	<dt class="tag-see">See:</dt>
 	<dd class="tag-see">
         <ul>
-            <li><a href="https://github.com/xueduany/KitJs/blob/master/KitJs/src/js/widget/TagInput/tagInput.js">Source code</a></li>
+            <li><a href="https://github.com/xueduany/KitJs/blob/master/KitJs/src/js/widget/Dialog/yesOrNo.js">Source code</a></li>
         </ul>
 	</dd>
 	
@@ -115,16 +115,17 @@
     
     
     
-        <h5>Example</h5>
-        
-    <pre class="sh_javascript"><code><a href="http://xueduany.github.com/KitJs/KitJs/demo/TagInput/demo.html">Demo</a><br/><img src="http://xueduany.github.com/KitJs/KitJs/demo/TagInput/demo.png"></code></pre>
-
-    
 </dd>
 
     
     </div>
     
+    
+        <h3 class="subsection-title">Extends</h3>
+        
+        <ul>
+            <li><a href="$kit.ui.Dialog.html">$kit.ui.Dialog</a></li>
+        </ul>
     
     
     
@@ -152,204 +153,6 @@
 <dl class="details">
     
         
-        <h5 class="subsection-title">Properties:</h5>
-        
-        <dl>
-
-<table class="props">
-    <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		
-		<th>Default</th>
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
-        <tr>
-            
-                <td class="name"><code>el</code></td>
-            
-            
-            <td class="type">
-            
-            </td>
-            
-            
-            
-            
-                <td class="default">
-                
-                    undefined
-                
-                </td>
-            
-            
-            <td class="description last"></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>kitWidgetName</code></td>
-            
-            
-            <td class="type">
-            
-            </td>
-            
-            
-            
-            
-                <td class="default">
-                
-                    kitTag
-                
-                </td>
-            
-            
-            <td class="description last"></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>splitChar</code></td>
-            
-            
-            <td class="type">
-            
-            </td>
-            
-            
-            
-            
-                <td class="default">
-                
-                    ,
-                
-                </td>
-            
-            
-            <td class="description last"></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>tagValueMaxLength</code></td>
-            
-            
-            <td class="type">
-            
-            </td>
-            
-            
-            
-            
-                <td class="default">
-                
-                    100
-                
-                </td>
-            
-            
-            <td class="description last"></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>tagClass</code></td>
-            
-            
-            <td class="type">
-            
-            </td>
-            
-            
-            
-            
-                <td class="default">
-                
-                    kitjs_tagInput
-                
-                </td>
-            
-            
-            <td class="description last"></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>wrapperId</code></td>
-            
-            
-            <td class="type">
-            
-            </td>
-            
-            
-            
-            
-                <td class="default">
-                
-                    undefined
-                
-                </td>
-            
-            
-            <td class="description last"></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>template</code></td>
-            
-            
-            <td class="type">
-            
-            </td>
-            
-            
-            
-            
-                <td class="default">
-                
-                    OBJECTLIT
-                
-                </td>
-            
-            
-            <td class="description last"></td>
-        </tr>
-	
-	
-	</tbody>
-</table></dl>
-        
-    
-        
 	
 	
 	
@@ -366,7 +169,7 @@
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/TagInput/tagInput.js, line 26</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Dialog/yesOrNo.js, line 19</li></ul></dd>
 	
     
     
@@ -389,7 +192,7 @@
         <dl>
             
 <dt>
-    <h4 class="name" id="ev"><span class="type-signature"></span>ev</h4>
+    <h4 class="name" id="center"><span class="type-signature"></span>center</h4>
     
     
 </dt>
@@ -397,125 +200,12 @@
     
     
     <div class="description">
-        注册自定义事件
+        居中
     </div>
     
     
     
     
-    
-        <h5>Parameters:</h5>
-        
-
-<table class="params">
-    <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
-        <tr>
-            
-                <td class="name"><code>config</code></td>
-            
-            
-            <td class="type">
-            
-                        Object
-                        
-                    
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last">
-                <h6>Properties</h6>
-                
-
-<table class="params">
-    <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
-        <tr>
-            
-                <td class="name"><code>ev</code></td>
-            
-            
-            <td class="type">
-            
-                        String
-                        
-                    
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last"></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>fn</code></td>
-            
-            
-            <td class="type">
-            
-                        Function
-                        
-                    
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last"></td>
-        </tr>
-	
-	
-	</tbody>
-</table>
-            </td>
-        </tr>
-	
-	
-	</tbody>
-</table>
     
     
     
@@ -538,7 +228,7 @@
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/TagInput/tagInput.js, line 171</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Dialog/dialog.js, line 74</li></ul></dd>
 	
     
     
@@ -561,7 +251,7 @@
         
             
 <dt>
-    <h4 class="name" id="handleInput"><span class="type-signature"></span>handleInput</h4>
+    <h4 class="name" id="destroy"><span class="type-signature"></span>destroy</h4>
     
     
 </dt>
@@ -569,7 +259,7 @@
     
     
     <div class="description">
-        处理输入
+        销毁
     </div>
     
     
@@ -597,7 +287,66 @@
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/TagInput/tagInput.js, line 112</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Dialog/dialog.js, line 105</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="hide"><span class="type-signature"></span>hide</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        显示
+    </div>
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Dialog/dialog.js, line 95</li></ul></dd>
 	
     
     
@@ -656,7 +405,7 @@
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/TagInput/tagInput.js, line 64</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Dialog/dialog.js, line 47</li></ul></dd>
 	
     
     
@@ -679,7 +428,7 @@
         
             
 <dt>
-    <h4 class="name" id="newEv"><span class="type-signature"></span>newEv</h4>
+    <h4 class="name" id="init"><span class="type-signature"></span>init</h4>
     
     
 </dt>
@@ -687,7 +436,66 @@
     
     
     <div class="description">
-        触发自定义事件
+        初始化
+    </div>
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Dialog/yesOrNo.js, line 71</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="setCancelThen"><span class="type-signature"></span>setCancelThen</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        点击cancel执行方法
     </div>
     
     
@@ -719,52 +527,12 @@
 	
         <tr>
             
-                <td class="name"><code>config</code></td>
+                <td class="name"><code>fn</code></td>
             
             
             <td class="type">
             
-                        Object
-                        
-                    
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last">
-                <h6>Properties</h6>
-                
-
-<table class="params">
-    <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
-        <tr>
-            
-                <td class="name"><code>ev</code></td>
-            
-            
-            <td class="type">
-            
-                        String
+                        Function
                         
                     
             </td>
@@ -774,12 +542,6 @@
             
             
             <td class="description last"></td>
-        </tr>
-	
-	
-	</tbody>
-</table>
-            </td>
         </tr>
 	
 	
@@ -807,7 +569,7 @@
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/TagInput/tagInput.js, line 192</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Dialog/yesOrNo.js, line 143</li></ul></dd>
 	
     
     
@@ -830,7 +592,7 @@
         
             
 <dt>
-    <h4 class="name" id="removeTag"><span class="type-signature"></span>removeTag</h4>
+    <h4 class="name" id="setNoThen"><span class="type-signature"></span>setNoThen</h4>
     
     
 </dt>
@@ -838,7 +600,217 @@
     
     
     <div class="description">
-        删除tag
+        点击no执行方法
+    </div>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>fn</code></td>
+            
+            
+            <td class="type">
+            
+                        Function
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Dialog/yesOrNo.js, line 136</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="setYesThen"><span class="type-signature"></span>setYesThen</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        点击yes执行方法
+    </div>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>fn</code></td>
+            
+            
+            <td class="type">
+            
+                        Function
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Dialog/yesOrNo.js, line 129</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="show"><span class="type-signature"></span>show</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        隐藏
     </div>
     
     
@@ -866,7 +838,7 @@
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/TagInput/tagInput.js, line 157</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Dialog/dialog.js, line 85</li></ul></dd>
 	
     
     
@@ -906,7 +878,7 @@
 <br clear="both">
 
 <footer>
-    Documentation generated by <a href="https://github.com/micmath/jsdoc">JSDoc 3</a> on Sat Apr 28 2012 19:39:39 GMT+0800 (CST)<br/>
+    Documentation generated by <a href="https://github.com/micmath/jsdoc">JSDoc 3</a> on Sat Apr 28 2012 19:39:35 GMT+0800 (CST)<br/>
     Copyright 2012 <a href="http://xueduany.github.com/Ciku/aboutme/index.html">xueduanyang</a> all right reserved, <a href="http://xueduany.github.com/KitJs">Back to KitJs Demo Project</a>.
 </footer>
 
