@@ -1048,7 +1048,7 @@
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/anim.js, line 288</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/anim.js, line 305</li></ul></dd>
 	
     
     
@@ -1248,7 +1248,7 @@
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/anim.js, line 699</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/anim.js, line 716</li></ul></dd>
 	
     
     
@@ -1448,7 +1448,7 @@
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/anim.js, line 757</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/anim.js, line 774</li></ul></dd>
 	
     
     
@@ -1563,7 +1563,7 @@
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/anim.js, line 683</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/anim.js, line 700</li></ul></dd>
 	
     
     
@@ -1672,6 +1672,8 @@
 		<th>Type</th>
 		
 		
+		<th>Argument</th>
+		
 		
 		
 		
@@ -1695,6 +1697,14 @@
             </td>
             
             
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
             
             
             
@@ -1715,6 +1725,14 @@
                     
             </td>
             
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
             
             
             
@@ -1743,6 +1761,12 @@
             </td>
             
             
+                <td class="attributes">
+                
+                    
+                
+                </td>
+            
             
             
             
@@ -1763,6 +1787,14 @@
                     
             </td>
             
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
             
             
             
@@ -1785,11 +1817,133 @@
             </td>
             
             
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
             
             
             
             <td class="description last">动画开始第一帧的元素初始Css样式，如{opacity:0,display:'none'}，
 其中key为cssStyleName，value为cssStyleValue，这里支持Css3的样式属性如{'-webkit-transform':'scale(1) translateX(1000px)'},也是可以支持的。</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>to</code></td>
+            
+            
+            <td class="type">
+            
+                        Object
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last">动画最后一帧的元素Css样式</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>fx</code></td>
+            
+            
+            <td class="type">
+            
+                        Function
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last">动画算法，可以通过$kit.anim.fx(type)的方式取得动画算法，也可以直接$kit.anim.Fx.easeInQuad的方式取得算法</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>then</code></td>
+            
+            
+            <td class="type">
+            
+                        Function
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last">动画结束后的匿名方法</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>scope</code></td>
+            
+            
+            <td class="type">
+            
+                        Object
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last">config.then方法的this指针</td>
         </tr>
 	
 	
@@ -1823,7 +1977,7 @@
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/anim.js, line 31</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/anim.js, line 37</li></ul></dd>
 	
     
     
@@ -2030,7 +2184,7 @@
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/anim.js, line 815</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/anim.js, line 832</li></ul></dd>
 	
     
     
@@ -2230,7 +2384,7 @@
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/anim.js, line 875</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/anim.js, line 892</li></ul></dd>
 	
     
     
@@ -2270,7 +2424,7 @@
 <br clear="both">
 
 <footer>
-    Documentation generated by <a href="https://github.com/micmath/jsdoc">JSDoc 3</a> on Wed May 09 2012 18:35:33 GMT+0800 (CST)<br/>
+    Documentation generated by <a href="https://github.com/micmath/jsdoc">JSDoc 3</a> on Thu May 10 2012 11:31:10 GMT+0800 (CST)<br/>
     Copyright 2012 <a href="http://xueduany.github.com/Ciku/aboutme/index.html">xueduanyang</a> all right reserved, <a href="http://xueduany.github.com/KitJs">Back to KitJs Demo Project</a>.
 </footer>
 
