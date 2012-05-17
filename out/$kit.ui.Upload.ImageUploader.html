@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Class: LocalStorage</title>
+    <title>JSDoc: Class: ImageUploader</title>
     
     <script src="http://shjs.sourceforge.net/sh_main.min.js"> </script>
     <script src="http://shjs.sourceforge.net/lang/sh_javascript.min.js"> </script>
@@ -31,7 +31,7 @@
 <div style="position:fixed;right:0;top:0;"><a href="http://xueduany.github.com/KitJs/KitJs/index.html" style="display:block;text-decoration:none;padding:0 10px;height:30px;line-height:30px;color:#fff;background-color:#53BDE8;">返回KitJs Demo</a></div>
 <div id="main">
     
-    <h1 class="page-title">Class: LocalStorage</h1>
+    <h1 class="page-title">Class: ImageUploader</h1>
     
     
 
@@ -39,9 +39,9 @@
     
 <header>
     <h2>
-        <span class="ancestors"><a href="$Kit.html">$Kit</a>.</span>
+        <span class="ancestors"><a href="global.html#$kit">$kit</a><a href="$kit.ui.html">.ui</a><a href="$kit.ui.Upload.html">.Upload</a>.</span>
     
-    LocalStorage
+    ImageUploader
     </h2>
     
 </header>  
@@ -54,7 +54,7 @@
     	
         
 <dt>
-    <h4 class="name" id="LocalStorage"><span class="type-signature"></span>new $Kit.LocalStorage</h4>
+    <h4 class="name" id="ImageUploader"><span class="type-signature"></span>new $kit.ui.Upload.ImageUploader</h4>
     
     
 </dt>
@@ -62,12 +62,429 @@
     
     
     <div class="description">
-        本地存储
+        图片预览上传组件
     </div>
     
     
     
     
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>config</code></td>
+            
+            
+            <td class="type">
+            
+                        Object
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last">组件配置
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Argument</th>
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>element</code></td>
+            
+            
+            <td class="type">
+            
+                        Element
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last">初始化哪一块div为上传组件</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>action</code></td>
+            
+            
+            <td class="type">
+            
+                        String
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last">接收上传文件的后台API接口地址</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>allowedExtensions</code></td>
+            
+            
+            <td class="type">
+            
+                        [String]
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last">允许上传的文件扩展名，如allowedExtensions : ['jpg', 'jpeg', 'png', 'gif', 'bmp'],</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>sizeLimit</code></td>
+            
+            
+            <td class="type">
+            
+                        Number
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last">最大上传文件大小，sizeLimit: 0, // max size</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>minSizeLimit</code></td>
+            
+            
+            <td class="type">
+            
+                        Number
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last">最小上传文件大小，minSizeLimit: 0, // min size</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>onSubmit</code></td>
+            
+            
+            <td class="type">
+            
+                        Function
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last">提交时事件，传入两个参数function(id, fileName)</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>onComplete</code></td>
+            
+            
+            <td class="type">
+            
+                        Function
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last">上传完毕事件，传入三个参数function(id, fileName, responseJSON)</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>onProgress</code></td>
+            
+            
+            <td class="type">
+            
+                        Function
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last">上传过程事件，传入三个参数function(id, fileName, loaded, total){}</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>onCancel</code></td>
+            
+            
+            <td class="type">
+            
+                        Function
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last">取消事件，function(id, fileName){}</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>accept</code></td>
+            
+            
+            <td class="type">
+            
+                        Accept
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last">input file接受上传的文件类型筛选，可能部分浏览器支持不好</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>message</code></td>
+            
+            
+            <td class="type">
+            
+                        Map
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last">自定义错误信息，see $kit.ui.Upload.FileUploaderBasic for content</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>showMessage</code></td>
+            
+            
+            <td class="type">
+            
+                        Function
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last">报错方法，showMessage: function(message){ alert(message); }</td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+            </td>
+        </tr>
+	
+	
+	</tbody>
+</table>
     
     
     
@@ -90,7 +507,7 @@
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/localStorage.js, line 1</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Upload/upload.js, line 1191</li></ul></dd>
 	
     
     
@@ -99,7 +516,7 @@
 	<dt class="tag-see">See:</dt>
 	<dd class="tag-see">
         <ul>
-            <li><a href="https://github.com/xueduany/KitJs/blob/master/KitJs/src/js/localStorage.js">Source code</a></li>
+            <li><a href="https://github.com/xueduany/KitJs/blob/master/KitJs/src/js/widget/Upload/upload.js">Source code</a></li>
         </ul>
 	</dd>
 	
@@ -125,11 +542,6 @@
     
     
     
-        <h3 class="subsection-title">Requires</h3>
-        
-        <ul>
-            <li>module:kit.js</li>
-        </ul>
     
     
     
@@ -137,469 +549,6 @@
     
     
     
-    
-    
-        <h3 class="subsection-title">Methods</h3>
-        
-        <dl>
-            
-<dt>
-    <h4 class="name" id="clear"><span class="type-signature"></span>clear</h4>
-    
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        清空
-    </div>
-    
-    
-    
-    
-    
-    
-    
-<dl class="details">
-    
-        
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/localStorage.js, line 72</li></ul></dd>
-	
-    
-    
-	
-	
-	
-	
-</dl>
-
-    
-    
-    
-    
-    
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <h4 class="name" id="get"><span class="type-signature"></span>get</h4>
-    
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        读取
-    </div>
-    
-    
-    
-    
-    
-        <h5>Parameters:</h5>
-        
-
-<table class="params">
-    <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
-        <tr>
-            
-                <td class="name"><code>key</code></td>
-            
-            
-            <td class="type">
-            
-                        Object
-                        
-                    
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last"></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>context</code></td>
-            
-            
-            <td class="type">
-            
-                        Object
-                        
-                    
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last"></td>
-        </tr>
-	
-	
-	</tbody>
-</table>
-    
-    
-    
-<dl class="details">
-    
-        
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/localStorage.js, line 40</li></ul></dd>
-	
-    
-    
-	
-	
-	
-	
-</dl>
-
-    
-    
-    
-    
-    
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <h4 class="name" id="rm"><span class="type-signature"></span>rm</h4>
-    
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        删除
-    </div>
-    
-    
-    
-    
-    
-        <h5>Parameters:</h5>
-        
-
-<table class="params">
-    <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
-        <tr>
-            
-                <td class="name"><code>key</code></td>
-            
-            
-            <td class="type">
-            
-                        Object
-                        
-                    
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last"></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>context</code></td>
-            
-            
-            <td class="type">
-            
-                        Object
-                        
-                    
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last"></td>
-        </tr>
-	
-	
-	</tbody>
-</table>
-    
-    
-    
-<dl class="details">
-    
-        
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/localStorage.js, line 56</li></ul></dd>
-	
-    
-    
-	
-	
-	
-	
-</dl>
-
-    
-    
-    
-    
-    
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <h4 class="name" id="set"><span class="type-signature"></span>set</h4>
-    
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        保存
-    </div>
-    
-    
-    
-    
-    
-        <h5>Parameters:</h5>
-        
-
-<table class="params">
-    <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
-        <tr>
-            
-                <td class="name"><code>key</code></td>
-            
-            
-            <td class="type">
-            
-                        Object
-                        
-                    
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last"></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>val</code></td>
-            
-            
-            <td class="type">
-            
-                        Object
-                        
-                    
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last"></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>context</code></td>
-            
-            
-            <td class="type">
-            
-                        Obejct
-                        
-                    
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last"></td>
-        </tr>
-	
-	
-	</tbody>
-</table>
-    
-    
-    
-<dl class="details">
-    
-        
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/localStorage.js, line 24</li></ul></dd>
-	
-    
-    
-	
-	
-	
-	
-</dl>
-
-    
-    
-    
-    
-    
-    
-    
-    
-</dd>
-
-        </dl>
     
     
     
@@ -619,7 +568,7 @@
 <br clear="both">
 
 <footer>
-    Documentation generated by <a href="https://github.com/micmath/jsdoc">JSDoc 3</a> on Thu May 17 2012 13:24:07 GMT+0800 (CST)<br/>
+    Documentation generated by <a href="https://github.com/micmath/jsdoc">JSDoc 3</a> on Thu May 17 2012 13:24:15 GMT+0800 (CST)<br/>
     Copyright 2012 <a href="http://xueduany.github.com/Ciku/aboutme/index.html">xueduanyang</a> all right reserved, <a href="http://xueduany.github.com/KitJs">Back to KitJs Demo Project</a>.
 </footer>
 
