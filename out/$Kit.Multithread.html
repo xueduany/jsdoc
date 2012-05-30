@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Class: YesOrNo</title>
+    <title>JSDoc: Class: Multithread</title>
     
     <script src="http://shjs.sourceforge.net/sh_main.min.js"> </script>
     <script src="http://shjs.sourceforge.net/lang/sh_javascript.min.js"> </script>
@@ -31,7 +31,7 @@
 <div style="position:fixed;right:0;top:0;"><a href="http://xueduany.github.com/KitJs/KitJs/index.html" style="display:block;text-decoration:none;padding:0 10px;height:30px;line-height:30px;color:#fff;background-color:#53BDE8;">返回KitJs Demo</a></div>
 <div id="main">
     
-    <h1 class="page-title">Class: YesOrNo</h1>
+    <h1 class="page-title">Class: Multithread</h1>
     
     
 
@@ -39,9 +39,9 @@
     
 <header>
     <h2>
-        <span class="ancestors"><a href="global.html#$kit">$kit</a><a href="$kit.ui.html">.ui</a><a href="$kit.ui.Dialog.html">.Dialog</a>.</span>
+        <span class="ancestors"><a href="$Kit.html">$Kit</a>.</span>
     
-    YesOrNo
+    Multithread
     </h2>
     
 </header>  
@@ -54,7 +54,7 @@
     	
         
 <dt>
-    <h4 class="name" id="YesOrNo"><span class="type-signature"></span>new $kit.ui.Dialog.YesOrNo</h4>
+    <h4 class="name" id="Multithread"><span class="type-signature"></span>new $Kit.Multithread</h4>
     
     
 </dt>
@@ -62,7 +62,7 @@
     
     
     <div class="description">
-        对话框组件，yes Or no Or cancel
+        多线程
     </div>
     
     
@@ -90,7 +90,7 @@
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Dialog/yesOrNo.js, line 1</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/multithread.js, line 1</li></ul></dd>
 	
     
     
@@ -99,7 +99,7 @@
 	<dt class="tag-see">See:</dt>
 	<dd class="tag-see">
         <ul>
-            <li><a href="https://github.com/xueduany/KitJs/blob/master/KitJs/src/js/widget/Dialog/yesOrNo.js">Source code</a></li>
+            <li><a href="https://github.com/xueduany/KitJs/blob/master/KitJs/src/js/multithread.js">Source code</a></li>
         </ul>
 	</dd>
 	
@@ -115,16 +115,25 @@
     
     
     
+        <h5>Example</h5>
+        
+    <pre class="sh_javascript"><code> <a href="xueduany.github.com/KitJs/KitJs/demo/MultiThread/demo.html">KitJs多线程demo演示</a></code></pre>
+
+    
 </dd>
 
     
     </div>
     
     
-        <h3 class="subsection-title">Extends</h3>
+    
+    
+    
+    
+        <h3 class="subsection-title">Requires</h3>
         
         <ul>
-            <li><a href="$kit.ui.Dialog.html">$kit.ui.Dialog</a></li>
+            <li>module:kit.js</li>
         </ul>
     
     
@@ -135,64 +144,12 @@
     
     
     
-    
-    
-        <h3 class="subsection-title">Members</h3>
-        
-        <dl>
-            
-<dt>
-    <h4 class="name" id="defaultConfig"><span class="type-signature">&lt;static> </span>defaultConfig<span class="type-signature"></span></h4>
-    
-    
-</dt>
-<dd>
-    
-    
-    
-<dl class="details">
-    
-        
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Dialog/yesOrNo.js, line 19</li></ul></dd>
-	
-    
-    
-	
-	
-	
-	
-</dl>
-
-    
-    
-</dd>
-
-        </dl>
-    
-    
-    
         <h3 class="subsection-title">Methods</h3>
         
         <dl>
             
 <dt>
-    <h4 class="name" id="center"><span class="type-signature"></span>center</h4>
+    <h4 class="name" id="iterate"><span class="type-signature"></span>iterate</h4>
     
     
 </dt>
@@ -200,12 +157,85 @@
     
     
     <div class="description">
-        居中
+        循环，替代标准的while,for等
     </div>
     
     
     
     
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>condition</code></td>
+            
+            
+            <td class="type">
+            
+                        Function
+                         | 
+                    
+                        Boolean
+                         | 
+                    
+                        String
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>fn</code></td>
+            
+            
+            <td class="type">
+            
+                        Function
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
     
     
     
@@ -228,7 +258,7 @@
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Dialog/dialog.js, line 74</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/multithread.js, line 103</li></ul></dd>
 	
     
     
@@ -251,7 +281,7 @@
         
             
 <dt>
-    <h4 class="name" id="destroy"><span class="type-signature"></span>destroy</h4>
+    <h4 class="name" id="killThread"><span class="type-signature"></span>killThread</h4>
     
     
 </dt>
@@ -259,12 +289,58 @@
     
     
     <div class="description">
-        销毁
+        杀死线程
     </div>
     
     
     
     
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>threadId</code></td>
+            
+            
+            <td class="type">
+            
+                        Number
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
     
     
     
@@ -287,7 +363,7 @@
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Dialog/dialog.js, line 105</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/multithread.js, line 79</li></ul></dd>
 	
     
     
@@ -303,65 +379,24 @@
     
     
     
+    <h5>Returns:</h5>
     
-    
-</dd>
-
-        
             
-<dt>
-    <h4 class="name" id="hide"><span class="type-signature"></span>hide</h4>
-    
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        显示
-    </div>
-    
-    
-    
-    
-    
-    
-    
-<dl class="details">
-    
-        
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Dialog/dialog.js, line 95</li></ul></dd>
-	
-    
-    
-	
-	
-	
-	
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Boolean</span> 
+		
+	</dd>
 </dl>
 
-    
-    
-    
-    
-    
-    
+        
     
     
 </dd>
@@ -369,7 +404,7 @@
         
             
 <dt>
-    <h4 class="name" id="init"><span class="type-signature"></span>init</h4>
+    <h4 class="name" id="newThread"><span class="type-signature"></span>newThread</h4>
     
     
 </dt>
@@ -377,125 +412,7 @@
     
     
     <div class="description">
-        初始化
-    </div>
-    
-    
-    
-    
-    
-    
-    
-<dl class="details">
-    
-        
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Dialog/dialog.js, line 47</li></ul></dd>
-	
-    
-    
-	
-	
-	
-	
-</dl>
-
-    
-    
-    
-    
-    
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <h4 class="name" id="init"><span class="type-signature"></span>init</h4>
-    
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        初始化
-    </div>
-    
-    
-    
-    
-    
-    
-    
-<dl class="details">
-    
-        
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Dialog/yesOrNo.js, line 65</li></ul></dd>
-	
-    
-    
-	
-	
-	
-	
-</dl>
-
-    
-    
-    
-    
-    
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <h4 class="name" id="setCancelThen"><span class="type-signature"></span>setCancelThen</h4>
-    
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        点击cancel执行方法
+        创建一个新线程
     </div>
     
     
@@ -569,7 +486,134 @@
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Dialog/yesOrNo.js, line 137</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/multithread.js, line 23</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    返回线程id
+</div>
+
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+		<span class="param-type">Number</span> 
+		
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="run"><span class="type-signature"></span>run</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        根据线程id运行线程
+    </div>
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>threadId</code></td>
+            
+            
+            <td class="type">
+            
+                        Number
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/multithread.js, line 40</li></ul></dd>
 	
     
     
@@ -592,7 +636,7 @@
         
             
 <dt>
-    <h4 class="name" id="setNoThen"><span class="type-signature"></span>setNoThen</h4>
+    <h4 class="name" id="sleep"><span class="type-signature"></span>sleep</h4>
     
     
 </dt>
@@ -600,7 +644,7 @@
     
     
     <div class="description">
-        点击no执行方法
+        延时线程执行
     </div>
     
     
@@ -650,99 +694,15 @@
         </tr>
 	
 	
-	</tbody>
-</table>
-    
-    
-    
-<dl class="details">
-    
-        
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Dialog/yesOrNo.js, line 130</li></ul></dd>
-	
-    
-    
-	
-	
-	
-	
-</dl>
-
-    
-    
-    
-    
-    
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <h4 class="name" id="setYesThen"><span class="type-signature"></span>setYesThen</h4>
-    
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        点击yes执行方法
-    </div>
-    
-    
-    
-    
-    
-        <h5>Parameters:</h5>
-        
-
-<table class="params">
-    <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
 	
         <tr>
             
-                <td class="name"><code>fn</code></td>
+                <td class="name"><code>timeOut</code></td>
             
             
             <td class="type">
             
-                        Function
+                        Number
                         
                     
             </td>
@@ -779,66 +739,7 @@
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Dialog/yesOrNo.js, line 123</li></ul></dd>
-	
-    
-    
-	
-	
-	
-	
-</dl>
-
-    
-    
-    
-    
-    
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <h4 class="name" id="show"><span class="type-signature"></span>show</h4>
-    
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        隐藏
-    </div>
-    
-    
-    
-    
-    
-    
-    
-<dl class="details">
-    
-        
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Dialog/dialog.js, line 85</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/multithread.js, line 57</li></ul></dd>
 	
     
     
@@ -878,7 +779,7 @@
 <br clear="both">
 
 <footer>
-    Documentation generated by <a href="https://github.com/micmath/jsdoc">JSDoc 3</a> on Wed May 30 2012 15:00:09 GMT+0800 (CST)<br/>
+    Documentation generated by <a href="https://github.com/micmath/jsdoc">JSDoc 3</a> on Wed May 30 2012 15:00:05 GMT+0800 (CST)<br/>
     Copyright 2012 <a href="http://xueduany.github.com/Ciku/aboutme/index.html">xueduanyang</a> all right reserved, <a href="http://xueduany.github.com/KitJs">Back to KitJs Demo Project</a>.
 </footer>
 
