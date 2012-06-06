@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Class: Dialog</title>
+    <title>JSDoc: Class: Loader</title>
     
     <script src="http://shjs.sourceforge.net/sh_main.min.js"> </script>
     <script src="http://shjs.sourceforge.net/lang/sh_javascript.min.js"> </script>
@@ -31,7 +31,7 @@
 <div style="position:fixed;right:0;top:0;"><a href="http://xueduany.github.com/KitJs/KitJs/index.html" style="display:block;text-decoration:none;padding:0 10px;height:30px;line-height:30px;color:#fff;background-color:#53BDE8;">返回KitJs Demo</a></div>
 <div id="main">
     
-    <h1 class="page-title">Class: Dialog</h1>
+    <h1 class="page-title">Class: Loader</h1>
     
     
 
@@ -39,9 +39,7 @@
     
 <header>
     <h2>
-        <span class="ancestors"><a href="global.html#$kit">$kit</a><a href="$kit.ui.html">.ui</a>.</span>
-    
-    Dialog
+    Loader
     </h2>
     
 </header>  
@@ -54,7 +52,7 @@
     	
         
 <dt>
-    <h4 class="name" id="Dialog"><span class="type-signature"></span>new $kit.ui.Dialog</h4>
+    <h4 class="name" id="Loader"><span class="type-signature"></span>new Waterfall.Loader</h4>
     
     
 </dt>
@@ -62,7 +60,7 @@
     
     
     <div class="description">
-        对话框组件
+        Dynamic load waterfall items by monitor window scroll.
     </div>
     
     
@@ -90,18 +88,11 @@
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Dialog/dialog.js, line 1</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Waterfall/loader.js, line 16</li></ul></dd>
 	
     
     
 	
-	
-	<dt class="tag-see">See:</dt>
-	<dd class="tag-see">
-        <ul>
-            <li><a href="https://github.com/xueduany/KitJs/blob/master/KitJs/src/js/widget/Dialog/dialog.js">Source code</a></li>
-        </ul>
-	</dd>
 	
 	
 	
@@ -127,13 +118,6 @@
     
     
     
-        <h3 class="subsection-title">Classes</h3>
-        
-        <dl>
-            <dt><a href="$kit.ui.Dialog.YesOrNo.html">$kit.ui.Dialog.YesOrNo</a></dt>
-            <dd>对话框组件，yes Or no Or cancel</dd>
-        </dl>
-    
     
     
     
@@ -143,237 +127,19 @@
         <dl>
             
 <dt>
-    <h4 class="name" id="defaultConfig"><span class="type-signature">&lt;static> </span>defaultConfig<span class="type-signature"></span></h4>
+    <h4 class="name" id="diff"><span class="type-signature"></span>diff<span class="type-signature"> :Number</span></h4>
     
     
 </dt>
 <dd>
     
+    <div class="description">
+        Preload distance below viewport.Default: 0.
+    </div>
+    
     
     
 <dl class="details">
-    
-        
-        <h5 class="subsection-title">Properties:</h5>
-        
-        <dl>
-
-<table class="props">
-    <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		
-		<th>Default</th>
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
-        <tr>
-            
-                <td class="name"><code>html</code></td>
-            
-            
-            <td class="type">
-            
-            </td>
-            
-            
-            
-            
-                <td class="default">
-                
-                    CALL
-                
-                </td>
-            
-            
-            <td class="description last"></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>dialogCls</code></td>
-            
-            
-            <td class="type">
-            
-            </td>
-            
-            
-            
-            
-                <td class="default">
-                
-                    kitjs-dialog
-                
-                </td>
-            
-            
-            <td class="description last"></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>dialogTitleCls</code></td>
-            
-            
-            <td class="type">
-            
-            </td>
-            
-            
-            
-            
-                <td class="default">
-                
-                    kitjs-dialog-title
-                
-                </td>
-            
-            
-            <td class="description last"></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>dialogPanelCls</code></td>
-            
-            
-            <td class="type">
-            
-            </td>
-            
-            
-            
-            
-                <td class="default">
-                
-                    kitjs-dialog-panel
-                
-                </td>
-            
-            
-            <td class="description last"></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>closeBtnCls</code></td>
-            
-            
-            <td class="type">
-            
-            </td>
-            
-            
-            
-            
-                <td class="default">
-                
-                    kitjs-dialog-close-btn
-                
-                </td>
-            
-            
-            <td class="description last"></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>useMask</code></td>
-            
-            
-            <td class="type">
-            
-            </td>
-            
-            
-            
-            
-                <td class="default">
-                
-                    false
-                
-                </td>
-            
-            
-            <td class="description last"></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>draggable</code></td>
-            
-            
-            <td class="type">
-            
-            </td>
-            
-            
-            
-            
-                <td class="default">
-                
-                    true
-                
-                </td>
-            
-            
-            <td class="description last"></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>title</code></td>
-            
-            
-            <td class="type">
-            
-            </td>
-            
-            
-            
-            
-                <td class="default">
-                
-                    Dialog
-                
-                </td>
-            
-            
-            <td class="description last"></td>
-        </tr>
-	
-	
-	</tbody>
-</table></dl>
-        
     
         
 	
@@ -392,7 +158,7 @@
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Dialog/dialog.js, line 20</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Waterfall/loader.js, line 76</li></ul></dd>
 	
     
     
@@ -415,65 +181,6 @@
         <dl>
             
 <dt>
-    <h4 class="name" id="center"><span class="type-signature"></span>center</h4>
-    
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        居中
-    </div>
-    
-    
-    
-    
-    
-    
-    
-<dl class="details">
-    
-        
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Dialog/dialog.js, line 74</li></ul></dd>
-	
-    
-    
-	
-	
-	
-	
-</dl>
-
-    
-    
-    
-    
-    
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
     <h4 class="name" id="destroy"><span class="type-signature"></span>destroy</h4>
     
     
@@ -482,7 +189,7 @@
     
     
     <div class="description">
-        销毁
+        Destroy this instance.
     </div>
     
     
@@ -510,7 +217,7 @@
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Dialog/dialog.js, line 105</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Waterfall/loader.js, line 128</li></ul></dd>
 	
     
     
@@ -533,7 +240,7 @@
         
             
 <dt>
-    <h4 class="name" id="hide"><span class="type-signature"></span>hide</h4>
+    <h4 class="name" id="end"><span class="type-signature"></span>end</h4>
     
     
 </dt>
@@ -541,7 +248,7 @@
     
     
     <div class="description">
-        显示
+        Stop monitor scroll on window.
     </div>
     
     
@@ -569,7 +276,7 @@
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Dialog/dialog.js, line 95</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Waterfall/loader.js, line 108</li></ul></dd>
 	
     
     
@@ -592,7 +299,7 @@
         
             
 <dt>
-    <h4 class="name" id="init"><span class="type-signature"></span>init</h4>
+    <h4 class="name" id="pause"><span class="type-signature"></span>pause</h4>
     
     
 </dt>
@@ -600,7 +307,7 @@
     
     
     <div class="description">
-        初始化
+        Use end instead.
     </div>
     
     
@@ -617,6 +324,8 @@
 	
 	
 	
+        <dt class="important tag-deprecated">Deprecated:</dt><dd><ul class="dummy"><li>1.3</li><ul></dd>
+    
 	
 	
 	
@@ -628,7 +337,7 @@
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Dialog/dialog.js, line 47</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Waterfall/loader.js, line 115</li></ul></dd>
 	
     
     
@@ -651,7 +360,7 @@
         
             
 <dt>
-    <h4 class="name" id="show"><span class="type-signature"></span>show</h4>
+    <h4 class="name" id="resume"><span class="type-signature"></span>resume</h4>
     
     
 </dt>
@@ -659,7 +368,7 @@
     
     
     <div class="description">
-        隐藏
+        Use start instead.
     </div>
     
     
@@ -676,6 +385,8 @@
 	
 	
 	
+        <dt class="important tag-deprecated">Deprecated:</dt><dd><ul class="dummy"><li>1.3</li><ul></dd>
+    
 	
 	
 	
@@ -687,7 +398,69 @@
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Dialog/dialog.js, line 85</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Waterfall/loader.js, line 122</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="start"><span class="type-signature"></span>start</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        Start monitor scroll on window.
+    </div>
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	<dt class="tag-since">Since:</dt>
+	<dd class="tag-since"><ul class="dummy"><li>1.3</dd>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Waterfall/loader.js, line 98</li></ul></dd>
 	
     
     
@@ -727,7 +500,7 @@
 <br clear="both">
 
 <footer>
-    Documentation generated by <a href="https://github.com/micmath/jsdoc">JSDoc 3</a> on Wed Jun 06 2012 15:22:31 GMT+0800 (CST)<br/>
+    Documentation generated by <a href="https://github.com/micmath/jsdoc">JSDoc 3</a> on Wed Jun 06 2012 15:22:36 GMT+0800 (CST)<br/>
     Copyright 2012 <a href="http://xueduany.github.com/Ciku/aboutme/index.html">xueduanyang</a> all right reserved, <a href="http://xueduany.github.com/KitJs">Back to KitJs Demo Project</a>.
 </footer>
 

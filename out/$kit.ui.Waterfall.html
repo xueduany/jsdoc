@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Class: List</title>
+    <title>JSDoc: Class: Waterfall</title>
     
     <script src="http://shjs.sourceforge.net/sh_main.min.js"> </script>
     <script src="http://shjs.sourceforge.net/lang/sh_javascript.min.js"> </script>
@@ -31,7 +31,7 @@
 <div style="position:fixed;right:0;top:0;"><a href="http://xueduany.github.com/KitJs/KitJs/index.html" style="display:block;text-decoration:none;padding:0 10px;height:30px;line-height:30px;color:#fff;background-color:#53BDE8;">返回KitJs Demo</a></div>
 <div id="main">
     
-    <h1 class="page-title">Class: List</h1>
+    <h1 class="page-title">Class: Waterfall</h1>
     
     
 
@@ -39,9 +39,9 @@
     
 <header>
     <h2>
-        <span class="ancestors"><a href="global.html#$kit">$kit</a><a href="$kit.ui.html">.ui</a><a href="$kit.ui.Form.html">.Form</a>.</span>
+        <span class="ancestors"><a href="global.html#$kit">$kit</a><a href="$kit.ui.html">.ui</a>.</span>
     
-    List
+    Waterfall
     </h2>
     
 </header>  
@@ -54,7 +54,7 @@
     	
         
 <dt>
-    <h4 class="name" id="List"><span class="type-signature"></span>new $kit.ui.Form.List</h4>
+    <h4 class="name" id="Waterfall"><span class="type-signature"></span>new $kit.ui.Waterfall</h4>
     
     
 </dt>
@@ -62,7 +62,7 @@
     
     
     <div class="description">
-        鼠标键盘操作的列表，常用于input的下拉
+        kitjs瀑布流
     </div>
     
     
@@ -90,18 +90,11 @@
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Form/list.js, line 1</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Waterfall/waterfall.js, line 1</li></ul></dd>
 	
     
     
 	
-	
-	<dt class="tag-see">See:</dt>
-	<dd class="tag-see">
-        <ul>
-            <li><a href="https://github.com/xueduany/KitJs/blob/master/KitJs/src/js/widget/Form/list.js">Source code</a></li>
-        </ul>
-	</dd>
 	
 	
 	
@@ -120,12 +113,6 @@
     
     </div>
     
-    
-        <h3 class="subsection-title">Extends</h3>
-        
-        <ul>
-            <li><a href="$kit.ui.Form.html">$kit.ui.Form</a></li>
-        </ul>
     
     
     
@@ -152,7 +139,7 @@
         <dl>
             
 <dt>
-    <h4 class="name" id="defaultConfig"><span class="type-signature">&lt;static> </span>defaultConfig<span class="type-signature"></span></h4>
+    <h4 class="name" id="defaultConfig"><span class="type-signature"></span>defaultConfig<span class="type-signature"></span></h4>
     
     
 </dt>
@@ -191,7 +178,7 @@
 	
         <tr>
             
-                <td class="name"><code>where</code></td>
+                <td class="name"><code>el</code></td>
             
             
             <td class="type">
@@ -204,54 +191,6 @@
                 <td class="default">
                 
                     undefined
-                
-                </td>
-            
-            
-            <td class="description last"></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>pos</code></td>
-            
-            
-            <td class="type">
-            
-            </td>
-            
-            
-            
-            
-                <td class="default">
-                
-                    last
-                
-                </td>
-            
-            
-            <td class="description last"></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>what</code></td>
-            
-            
-            <td class="type">
-            
-            </td>
-            
-            
-            
-            
-                <td class="default">
-                
-                    CALL
                 
                 </td>
             
@@ -275,7 +214,7 @@
             
                 <td class="default">
                 
-                    kitFormList
+                    kitWaterfall
                 
                 </td>
             
@@ -287,7 +226,7 @@
 	
         <tr>
             
-                <td class="name"><code>listCls</code></td>
+                <td class="name"><code>validatorCls</code></td>
             
             
             <td class="type">
@@ -299,223 +238,7 @@
             
                 <td class="default">
                 
-                    kitjs-form-list
-                
-                </td>
-            
-            
-            <td class="description last"></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>listItemCls</code></td>
-            
-            
-            <td class="type">
-            
-            </td>
-            
-            
-            
-            
-                <td class="default">
-                
-                    kitjs-form-listItem
-                
-                </td>
-            
-            
-            <td class="description last"></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>oddListItemCls</code></td>
-            
-            
-            <td class="type">
-            
-            </td>
-            
-            
-            
-            
-                <td class="default">
-                
-                    kitjs-form-listItem-odd
-                
-                </td>
-            
-            
-            <td class="description last"></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>evenListItemCls</code></td>
-            
-            
-            <td class="type">
-            
-            </td>
-            
-            
-            
-            
-                <td class="default">
-                
-                    kitjs-form-listItem-even
-                
-                </td>
-            
-            
-            <td class="description last"></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>listItemHTML</code></td>
-            
-            
-            <td class="type">
-            
-            </td>
-            
-            
-            
-            
-                <td class="default">
-                
-                    CALL
-                
-                </td>
-            
-            
-            <td class="description last"></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>list</code></td>
-            
-            
-            <td class="type">
-            
-            </td>
-            
-            
-            
-            
-                <td class="default">
-                
-                    undefined
-                
-                </td>
-            
-            
-            <td class="description last"></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>selectedCls</code></td>
-            
-            
-            <td class="type">
-            
-            </td>
-            
-            
-            
-            
-                <td class="default">
-                
-                    selected
-                
-                </td>
-            
-            
-            <td class="description last"></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>triggleEl</code></td>
-            
-            
-            <td class="type">
-            
-            </td>
-            
-            
-            
-            
-                <td class="default">
-                
-                    undefined
-                
-                </td>
-            
-            
-            <td class="description last"></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>template</code></td>
-            
-            
-            <td class="type">
-            
-            </td>
-            
-            
-            
-            
-                <td class="default">
-                
-                    OBJECTLIT
-                
-                </td>
-            
-            
-            <td class="description last"></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>setValue</code></td>
-            
-            
-            <td class="type">
-            
-            </td>
-            
-            
-            
-            
-                <td class="default">
-                
-                    undefined
+                    kitjs-waterfall
                 
                 </td>
             
@@ -545,7 +268,7 @@
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Form/list.js, line 27</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Waterfall/waterfall.js, line 21</li></ul></dd>
 	
     
     
@@ -568,7 +291,7 @@
         <dl>
             
 <dt>
-    <h4 class="name" id="adjustScrollTop"><span class="type-signature"></span>adjustScrollTop</h4>
+    <h4 class="name" id="addItems"><span class="type-signature"></span>addItems</h4>
     
     
 </dt>
@@ -576,12 +299,95 @@
     
     
     <div class="description">
-        调整滚动条保证选择的选项在视野内
+        Add array of waterfall items to current instance.
     </div>
     
     
     
     
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Argument</th>
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>items</code></td>
+            
+            
+            <td class="type">
+            
+                        NodeList[]
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last">Waterfall items to be added.</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+            
+            <td class="type">
+            
+                        Function
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last">Callback function to be called after waterfall items are added.</td>
+        </tr>
+	
+	
+	</tbody>
+</table>
     
     
     
@@ -604,7 +410,7 @@
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Form/list.js, line 346</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Waterfall/waterfall.js, line 440</li></ul></dd>
 	
     
     
@@ -627,7 +433,7 @@
         
             
 <dt>
-    <h4 class="name" id="bindEv"><span class="type-signature"></span>bindEv</h4>
+    <h4 class="name" id="adjust"><span class="type-signature"></span>adjust</h4>
     
     
 </dt>
@@ -635,12 +441,68 @@
     
     
     <div class="description">
-        绑定事件
+        Readjust existing waterfall item.
     </div>
     
     
     
     
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Argument</th>
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+            
+            <td class="type">
+            
+                        Function
+                        
+                    
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last">Callback function to be called after adjust.</td>
+        </tr>
+	
+	
+	</tbody>
+</table>
     
     
     
@@ -663,7 +525,7 @@
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Form/list.js, line 101</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Waterfall/waterfall.js, line 402</li></ul></dd>
 	
     
     
@@ -686,7 +548,7 @@
         
             
 <dt>
-    <h4 class="name" id="buildList"><span class="type-signature"></span>buildList</h4>
+    <h4 class="name" id="adjustItem"><span class="type-signature"></span>adjustItem</h4>
     
     
 </dt>
@@ -694,66 +556,7 @@
     
     
     <div class="description">
-        创建列表
-    </div>
-    
-    
-    
-    
-    
-    
-    
-<dl class="details">
-    
-        
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Form/list.js, line 77</li></ul></dd>
-	
-    
-    
-	
-	
-	
-	
-</dl>
-
-    
-    
-    
-    
-    
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <h4 class="name" id="ev"><span class="type-signature"></span>ev</h4>
-    
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        注册自定义事件
+        Ajust the height of one specified item.
     </div>
     
     
@@ -785,7 +588,28 @@
 	
         <tr>
             
-                <td class="name"><code>config</code></td>
+                <td class="name"><code>item</code></td>
+            
+            
+            <td class="type">
+            
+                        NodeList
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last">Waterfall item to be adjusted.</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>cfg</code></td>
             
             
             <td class="type">
@@ -799,7 +623,7 @@
             
             
             
-            <td class="description last">
+            <td class="description last">Config object.
                 <h6>Properties</h6>
                 
 
@@ -825,28 +649,7 @@
 	
         <tr>
             
-                <td class="name"><code>ev</code></td>
-            
-            
-            <td class="type">
-            
-                        String
-                        
-                    
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last"></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>fn</code></td>
+                <td class="name"><code>callback</code></td>
             
             
             <td class="type">
@@ -860,7 +663,116 @@
             
             
             
+            <td class="description last">Callback function after the item is adjusted.</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>process</code></td>
+            
+            
+            <td class="type">
+            
+                        Function
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last">Adjust logic function.If returns a number, it is used as item height after adjust.else use item.outerHeight(true) as item height after adjust.</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>effect</code></td>
+            
+            
+            <td class="type">
+            
+                        Object
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last">Same as Waterfall#adjustEffect
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>duration</code></td>
+            
+            
+            <td class="type">
+            
+                        Number
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
             <td class="description last"></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>easing</code></td>
+            
+            
+            <td class="type">
+            
+                        String
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+            </td>
         </tr>
 	
 	
@@ -894,7 +806,7 @@
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Form/form.js, line 35</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Waterfall/waterfall.js, line 301</li></ul></dd>
 	
     
     
@@ -917,7 +829,7 @@
         
             
 <dt>
-    <h4 class="name" id="hide"><span class="type-signature"></span>hide</h4>
+    <h4 class="name" id="destroy"><span class="type-signature"></span>destroy</h4>
     
     
 </dt>
@@ -925,7 +837,7 @@
     
     
     <div class="description">
-        隐藏
+        Destroy current instance.
     </div>
     
     
@@ -953,7 +865,7 @@
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Form/list.js, line 380</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Waterfall/waterfall.js, line 458</li></ul></dd>
 	
     
     
@@ -976,7 +888,7 @@
         
             
 <dt>
-    <h4 class="name" id="isHide"><span class="type-signature"></span>isHide</h4>
+    <h4 class="name" id="destroy"><span class="type-signature"></span>destroy</h4>
     
     
 </dt>
@@ -984,7 +896,7 @@
     
     
     <div class="description">
-        是否隐藏
+        Destroy this instance.
     </div>
     
     
@@ -1012,7 +924,7 @@
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Form/list.js, line 358</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Waterfall/waterfall.js, line 126</li></ul></dd>
 	
     
     
@@ -1035,7 +947,7 @@
         
             
 <dt>
-    <h4 class="name" id="isShow"><span class="type-signature"></span>isShow</h4>
+    <h4 class="name" id="end"><span class="type-signature"></span>end</h4>
     
     
 </dt>
@@ -1043,7 +955,7 @@
     
     
     <div class="description">
-        是否显示
+        Stop monitor scroll on window.
     </div>
     
     
@@ -1071,7 +983,7 @@
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Form/list.js, line 365</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Waterfall/waterfall.js, line 102</li></ul></dd>
 	
     
     
@@ -1094,7 +1006,7 @@
         
             
 <dt>
-    <h4 class="name" id="newEv"><span class="type-signature"></span>newEv</h4>
+    <h4 class="name" id="isAdding"><span class="type-signature"></span>isAdding</h4>
     
     
 </dt>
@@ -1102,7 +1014,209 @@
     
     
     <div class="description">
-        触发自定义事件
+        Whether is adding waterfall item.
+    </div>
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	<dt class="tag-since">Since:</dt>
+	<dd class="tag-since"><ul class="dummy"><li>1.3</dd>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Waterfall/waterfall.js, line 279</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    Boolean
+</div>
+
+
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="isAdjusting"><span class="type-signature"></span>isAdjusting</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        Whether is adjusting waterfall items.
+    </div>
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Waterfall/waterfall.js, line 271</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    Boolean
+</div>
+
+
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="pause"><span class="type-signature"></span>pause</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        Use end instead.
+    </div>
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+        <dt class="important tag-deprecated">Deprecated:</dt><dd><ul class="dummy"><li>1.3</li><ul></dd>
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Waterfall/waterfall.js, line 113</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="removeItem"><span class="type-signature"></span>removeItem</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        Remove a waterfall item.
     </div>
     
     
@@ -1134,7 +1248,28 @@
 	
         <tr>
             
-                <td class="name"><code>config</code></td>
+                <td class="name"><code>item</code></td>
+            
+            
+            <td class="type">
+            
+                        NodeList
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last">Waterfall item to be removed.</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>cfg</code></td>
             
             
             <td class="type">
@@ -1148,7 +1283,7 @@
             
             
             
-            <td class="description last">
+            <td class="description last">Config object.
                 <h6>Properties</h6>
                 
 
@@ -1174,7 +1309,89 @@
 	
         <tr>
             
-                <td class="name"><code>ev</code></td>
+                <td class="name"><code>callback</code></td>
+            
+            
+            <td class="type">
+            
+                        Function
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last">Callback function to be called after remove.</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>effect</code></td>
+            
+            
+            <td class="type">
+            
+                        Object
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last">Same as Waterfall#adjustEffect
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>duration</code></td>
+            
+            
+            <td class="type">
+            
+                        Number
+                        
+                    
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>easing</code></td>
             
             
             <td class="type">
@@ -1200,6 +1417,12 @@
 	
 	</tbody>
 </table>
+            </td>
+        </tr>
+	
+	
+	</tbody>
+</table>
     
     
     
@@ -1222,7 +1445,7 @@
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Form/form.js, line 56</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Waterfall/waterfall.js, line 378</li></ul></dd>
 	
     
     
@@ -1245,7 +1468,7 @@
         
             
 <dt>
-    <h4 class="name" id="show"><span class="type-signature"></span>show</h4>
+    <h4 class="name" id="resume"><span class="type-signature"></span>resume</h4>
     
     
 </dt>
@@ -1253,7 +1476,7 @@
     
     
     <div class="description">
-        显示
+        Use start instead.
     </div>
     
     
@@ -1270,6 +1493,8 @@
 	
 	
 	
+        <dt class="important tag-deprecated">Deprecated:</dt><dd><ul class="dummy"><li>1.3</li><ul></dd>
+    
 	
 	
 	
@@ -1281,7 +1506,69 @@
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Form/list.js, line 372</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Waterfall/waterfall.js, line 120</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="start"><span class="type-signature"></span>start</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        Start monitor scroll on window.
+    </div>
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	<dt class="tag-since">Since:</dt>
+	<dd class="tag-since"><ul class="dummy"><li>1.3</dd>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/widget/Waterfall/waterfall.js, line 88</li></ul></dd>
 	
     
     
@@ -1321,7 +1608,7 @@
 <br clear="both">
 
 <footer>
-    Documentation generated by <a href="https://github.com/micmath/jsdoc">JSDoc 3</a> on Wed Jun 06 2012 15:22:32 GMT+0800 (CST)<br/>
+    Documentation generated by <a href="https://github.com/micmath/jsdoc">JSDoc 3</a> on Wed Jun 06 2012 15:22:35 GMT+0800 (CST)<br/>
     Copyright 2012 <a href="http://xueduany.github.com/Ciku/aboutme/index.html">xueduanyang</a> all right reserved, <a href="http://xueduany.github.com/KitJs">Back to KitJs Demo Project</a>.
 </footer>
 
