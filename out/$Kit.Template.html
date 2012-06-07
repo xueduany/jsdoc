@@ -62,7 +62,7 @@
     
     
     <div class="description">
-        kitjs模板
+        kitjs模板，整合了知名模板 mustache.js
     </div>
     
     
@@ -99,7 +99,7 @@
 	<dt class="tag-see">See:</dt>
 	<dd class="tag-see">
         <ul>
-            <li><a href="https://github.com/xueduany/KitJs/blob/master/KitJs/src/js/template.js">Source code</a></li>
+            <li><a href="https://github.com/janl/mustache.js/blob/master/mustache.js">Source code</a></li>
         </ul>
 	</dd>
 	
@@ -114,6 +114,11 @@
     
     
     
+    
+        <h5>Example</h5>
+        
+    <pre class="sh_javascript"><code> <a href="http://mustache.github.com/mustache.5.html">Mustache官网example</a><a href="http://xueduany.github.com/KitJs/KitJs/demo/Template/demo.html">KitJsexample</a></code></pre>
+
     
 </dd>
 
@@ -139,6 +144,423 @@
     
     
     
+        <h3 class="subsection-title">Methods</h3>
+        
+        <dl>
+            
+<dt>
+    <h4 class="name" id="_compile"><span class="type-signature">&lt;inner> </span>_compile</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        Used by `compile` to generate a reusable function for the given `template`.
+    </div>
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/template.js, line 434</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="clearCache"><span class="type-signature">&lt;inner> </span>clearCache</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        Clear the cache of compiled templates.
+    </div>
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/template.js, line 462</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="compile"><span class="type-signature">&lt;inner> </span>compile</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        Compiles the given `template` into a reusable function using the given`options`. In addition to the options accepted by Mustache.parse,recognized options include the following:  - cache    Set `false` to bypass any pre-compiled version of the given             template. Otherwise, a given `template` string will be cached             the first time it is parsed
+    </div>
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/template.js, line 475</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="debug"><span class="type-signature">&lt;inner> </span>debug</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        Adds the `template`, `line`, and `file` properties to the given errorobject and alters the message to provide more useful debugging information.
+    </div>
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/template.js, line 105</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="lookup"><span class="type-signature">&lt;inner> </span>lookup</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        Looks up the value of the given `name` in the given context `stack`.
+    </div>
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/template.js, line 127</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="parse"><span class="type-signature">&lt;inner> </span>parse</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        Parses the given `template` and returns the source of a function that,with the proper arguments, will render the template. Recognized optionsinclude the following:  - file     The name of the file the template comes from (displayed in             error messages)  - tags     An array of open and close tags the `template` uses. Defaults             to the value of Mustache.tags  - debug    Set `true` to log the body of the generated function to the             console  - space    Set `true` to preserve whitespace from lines that otherwise             contain only a {{tag}}. Defaults to `false`
+    </div>
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/template.js, line 217</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="render"><span class="type-signature">&lt;inner> </span>render</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        High-level function that renders the given `template` using the given`view` and `partials`. If you need to use any of the template options (see`compile` above), you must compile in a separate step, and then call thatcompiled function.
+    </div>
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>/KitJs/src/js/template.js, line 496</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        </dl>
+    
     
     
     
@@ -151,13 +573,13 @@
 </div>
 
 <nav>
-    <h3>Modules</h3><ul><li><a href="module-suger.html">module:suger</a></li></ul><h3>Classes</h3><ul><li><a href="$Kit.html">$Kit</a></li><li><a href="$Kit.Animation.html">$Kit.Animation</a></li><li><a href="$Kit.Array.html">$Kit.Array</a></li><li><a href="$Kit.Cookie.html">$Kit.Cookie</a></li><li><a href="$Kit.Date.html">$Kit.Date</a></li><li><a href="$Kit.Dom.html">$Kit.Dom</a></li><li><a href="$Kit.Event.html">$Kit.Event</a></li><li><a href="$Kit.IO.html">$Kit.IO</a></li><li><a href="$Kit.JSON.html">$Kit.JSON</a></li><li><a href="$Kit.LocalStorage.html">$Kit.LocalStorage</a></li><li><a href="$Kit.Math.html">$Kit.Math</a></li><li><a href="$Kit.Multithread.html">$Kit.Multithread</a></li><li><a href="$Kit.Selection.html">$Kit.Selection</a></li><li><a href="$Kit.Selector.html">$Kit.Selector</a></li><li><a href="$kit.SortMap.html">$kit.SortMap</a></li><li><a href="$Kit.String.html">$Kit.String</a></li><li><a href="$Kit.Suger.html">$Kit.Suger</a></li><li><a href="$Kit.Template.html">$Kit.Template</a></li><li><a href="$kit.TreeDict.html">$kit.TreeDict</a></li><li><a href="$kit.ui.Audio.html">$kit.ui.Audio</a></li><li><a href="$kit.ui.CodeExample.html">$kit.ui.CodeExample</a></li><li><a href="$kit.ui.DatePicker.html">$kit.ui.DatePicker</a></li><li><a href="$kit.ui.DatePicker.NMonths.html">$kit.ui.DatePicker.NMonths</a></li><li><a href="$kit.ui.Dialog.html">$kit.ui.Dialog</a></li><li><a href="$kit.ui.Dialog.YesOrNo.html">$kit.ui.Dialog.YesOrNo</a></li><li><a href="$kit.ui.Editor.html">$kit.ui.Editor</a></li><li><a href="$kit.ui.Editor.SimpleEditor.html">$kit.ui.Editor.SimpleEditor</a></li><li><a href="$kit.ui.Form.html">$kit.ui.Form</a></li><li><a href="$kit.ui.Form.ComboBox.html">$kit.ui.Form.ComboBox</a></li><li><a href="$kit.ui.Form.ComboBox.Select.html">$kit.ui.Form.ComboBox.Select</a></li><li><a href="$kit.ui.Form.List.html">$kit.ui.Form.List</a></li><li><a href="$kit.ui.Form.TextArea.html">$kit.ui.Form.TextArea</a></li><li><a href="$kit.ui.Form.TimeInput.html">$kit.ui.Form.TimeInput</a></li><li><a href="$kit.ui.Gallery.html">$kit.ui.Gallery</a></li><li><a href="$kit.ui.LightBox.html">$kit.ui.LightBox</a></li><li><a href="$kit.ui.Mask.html">$kit.ui.Mask</a></li><li><a href="$kit.ui.SemitransparentLoading.html">$kit.ui.SemitransparentLoading</a></li><li><a href="$kit.ui.SlideBar.html">$kit.ui.SlideBar</a></li><li><a href="$kit.ui.StarLevel.html">$kit.ui.StarLevel</a></li><li><a href="$kit.ui.TagInput.html">$kit.ui.TagInput</a></li><li><a href="$kit.ui.TextLoading.html">$kit.ui.TextLoading</a></li><li><a href="$kit.ui.Upload.FileUploader.html">$kit.ui.Upload.FileUploader</a></li><li><a href="$kit.ui.Upload.ImageUploader.html">$kit.ui.Upload.ImageUploader</a></li><li><a href="$kit.ui.Validator.html">$kit.ui.Validator</a></li><li><a href="$kit.ui.Waterfall.html">$kit.ui.Waterfall</a></li><li><a href="$Kit.Url.html">$Kit.Url</a></li><li><a href="LinkedHashMap.html">LinkedHashMap</a></li><li><a href="TreeDict.html">TreeDict</a></li><li><a href="Waterfall.Loader.html">Waterfall.Loader</a></li></ul><h3>Namespaces</h3><ul><li><a href="$kit.ui.html">$kit.ui</a></li><li><a href="$kit.ui.Upload.html">$kit.ui.Upload</a></li></ul><h3>Global</h3><ul><li><a href="global.html#$kit">$kit</a></li><li><a href="global.html#$kit.$">$kit.$</a></li><li><a href="global.html#$kit.$el">$kit.$el</a></li><li><a href="global.html#$kit.anim">$kit.anim</a></li><li><a href="global.html#$kit.array">$kit.array</a></li><li><a href="global.html#$kit.cookie">$kit.cookie</a></li><li><a href="global.html#$kit.date">$kit.date</a></li><li><a href="global.html#$kit.dom">$kit.dom</a></li><li><a href="global.html#$kit.event">$kit.event</a></li><li><a href="global.html#$kit.io">$kit.io</a></li><li><a href="global.html#$kit.json">$kit.json</a></li><li><a href="global.html#$kit.localStorage">$kit.localStorage</a></li><li><a href="global.html#$kit.math">$kit.math</a></li><li><a href="global.html#$kit.multithread">$kit.multithread</a></li><li><a href="global.html#$kit.selection">$kit.selection</a></li><li><a href="global.html#$kit.selector">$kit.selector</a></li><li><a href="global.html#$kit.str">$kit.str</a></li><li><a href="global.html#$kit.url">$kit.url</a></li><li><a href="global.html#define">define</a></li><li><a href="global.html#require">require</a></li></ul>
+    <h3>Modules</h3><ul><li><a href="module-suger.html">module:suger</a></li></ul><h3>Classes</h3><ul><li><a href="$Kit.html">$Kit</a></li><li><a href="$Kit.Animation.html">$Kit.Animation</a></li><li><a href="$Kit.Array.html">$Kit.Array</a></li><li><a href="$Kit.Cookie.html">$Kit.Cookie</a></li><li><a href="$Kit.Date.html">$Kit.Date</a></li><li><a href="$Kit.Dom.html">$Kit.Dom</a></li><li><a href="$Kit.Event.html">$Kit.Event</a></li><li><a href="$Kit.IO.html">$Kit.IO</a></li><li><a href="$Kit.JSON.html">$Kit.JSON</a></li><li><a href="$Kit.LocalStorage.html">$Kit.LocalStorage</a></li><li><a href="$Kit.Math.html">$Kit.Math</a></li><li><a href="$Kit.Multithread.html">$Kit.Multithread</a></li><li><a href="$Kit.Selection.html">$Kit.Selection</a></li><li><a href="$Kit.Selector.html">$Kit.Selector</a></li><li><a href="$kit.SortMap.html">$kit.SortMap</a></li><li><a href="$Kit.String.html">$Kit.String</a></li><li><a href="$Kit.Suger.html">$Kit.Suger</a></li><li><a href="$Kit.Template.html">$Kit.Template</a></li><li><a href="$kit.TreeDict.html">$kit.TreeDict</a></li><li><a href="$kit.ui.Audio.html">$kit.ui.Audio</a></li><li><a href="$kit.ui.CodeExample.html">$kit.ui.CodeExample</a></li><li><a href="$kit.ui.DatePicker.html">$kit.ui.DatePicker</a></li><li><a href="$kit.ui.DatePicker.NMonths.html">$kit.ui.DatePicker.NMonths</a></li><li><a href="$kit.ui.Dialog.html">$kit.ui.Dialog</a></li><li><a href="$kit.ui.Dialog.YesOrNo.html">$kit.ui.Dialog.YesOrNo</a></li><li><a href="$kit.ui.Editor.html">$kit.ui.Editor</a></li><li><a href="$kit.ui.Editor.SimpleEditor.html">$kit.ui.Editor.SimpleEditor</a></li><li><a href="$kit.ui.Form.html">$kit.ui.Form</a></li><li><a href="$kit.ui.Form.ComboBox.html">$kit.ui.Form.ComboBox</a></li><li><a href="$kit.ui.Form.ComboBox.Select.html">$kit.ui.Form.ComboBox.Select</a></li><li><a href="$kit.ui.Form.List.html">$kit.ui.Form.List</a></li><li><a href="$kit.ui.Form.TextArea.html">$kit.ui.Form.TextArea</a></li><li><a href="$kit.ui.Form.TimeInput.html">$kit.ui.Form.TimeInput</a></li><li><a href="$kit.ui.Gallery.html">$kit.ui.Gallery</a></li><li><a href="$kit.ui.LightBox.html">$kit.ui.LightBox</a></li><li><a href="$kit.ui.Mask.html">$kit.ui.Mask</a></li><li><a href="$kit.ui.SemitransparentLoading.html">$kit.ui.SemitransparentLoading</a></li><li><a href="$kit.ui.SlideBar.html">$kit.ui.SlideBar</a></li><li><a href="$kit.ui.StarLevel.html">$kit.ui.StarLevel</a></li><li><a href="$kit.ui.TagInput.html">$kit.ui.TagInput</a></li><li><a href="$kit.ui.TextLoading.html">$kit.ui.TextLoading</a></li><li><a href="$kit.ui.Upload.FileUploader.html">$kit.ui.Upload.FileUploader</a></li><li><a href="$kit.ui.Upload.ImageUploader.html">$kit.ui.Upload.ImageUploader</a></li><li><a href="$kit.ui.Validator.html">$kit.ui.Validator</a></li><li><a href="$kit.ui.Waterfall.html">$kit.ui.Waterfall</a></li><li><a href="$Kit.Url.html">$Kit.Url</a></li><li><a href="LinkedHashMap.html">LinkedHashMap</a></li><li><a href="TreeDict.html">TreeDict</a></li><li><a href="Waterfall.Loader.html">Waterfall.Loader</a></li></ul><h3>Namespaces</h3><ul><li><a href="$kit.ui.html">$kit.ui</a></li><li><a href="$kit.ui.Upload.html">$kit.ui.Upload</a></li></ul><h3>Global</h3><ul><li><a href="global.html#$kit">$kit</a></li><li><a href="global.html#$kit.$">$kit.$</a></li><li><a href="global.html#$kit.$el">$kit.$el</a></li><li><a href="global.html#$kit.anim">$kit.anim</a></li><li><a href="global.html#$kit.array">$kit.array</a></li><li><a href="global.html#$kit.cookie">$kit.cookie</a></li><li><a href="global.html#$kit.date">$kit.date</a></li><li><a href="global.html#$kit.dom">$kit.dom</a></li><li><a href="global.html#$kit.event">$kit.event</a></li><li><a href="global.html#$kit.io">$kit.io</a></li><li><a href="global.html#$kit.json">$kit.json</a></li><li><a href="global.html#$kit.localStorage">$kit.localStorage</a></li><li><a href="global.html#$kit.math">$kit.math</a></li><li><a href="global.html#$kit.multithread">$kit.multithread</a></li><li><a href="global.html#$kit.selection">$kit.selection</a></li><li><a href="global.html#$kit.selector">$kit.selector</a></li><li><a href="global.html#$kit.str">$kit.str</a></li><li><a href="global.html#$kit.template">$kit.template</a></li><li><a href="global.html#$kit.url">$kit.url</a></li><li><a href="global.html#define">define</a></li><li><a href="global.html#require">require</a></li></ul>
 </nav>
 
 <br clear="both">
 
 <footer>
-    Documentation generated by <a href="https://github.com/micmath/jsdoc">JSDoc 3</a> on Wed Jun 06 2012 15:22:29 GMT+0800 (CST)<br/>
+    Documentation generated by <a href="https://github.com/micmath/jsdoc">JSDoc 3</a> on Thu Jun 07 2012 18:23:43 GMT+0800 (CST)<br/>
     Copyright 2012 <a href="http://xueduany.github.com/Ciku/aboutme/index.html">xueduanyang</a> all right reserved, <a href="http://xueduany.github.com/KitJs">Back to KitJs Demo Project</a>.
 </footer>
 
